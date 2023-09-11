@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  grid-gap: 20px; /* space between images */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* You can modify these classes if you need some specific styles for specific items. */
+.gallery__item {
+  background-size: cover;
+  background-position: center;
+  height:300px;
+  width:auto;
+
+}
+
+.gallery__caption {
+
+  color: white;  /* Assuming you want white text over images, adjust as needed */
 }
