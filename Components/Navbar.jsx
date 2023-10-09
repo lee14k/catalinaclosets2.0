@@ -48,10 +48,13 @@ function Navbar() {
             <li className={styles.navitem}>
               <Link href="/">Home</Link>
             </li>
-            <li className={styles.navitem}>
-              <Link href="/Gallery">Gallery</Link>
+       
+  <li className={styles.navitem}>
+              <Link href="/Customspaces">Custom Spaces</Link>
             </li>
-
+                 <li className={styles.navitem}>
+              <Link href="/Inspiration">Inspiration</Link>
+            </li>
             <li className={styles.navitem}>
               <Link href="/Finishes">Finishes</Link>
             </li>

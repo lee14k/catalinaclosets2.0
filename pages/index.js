@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <div>
       <Conbar
-      phone=""
-      email=""/>
+      phone="608-205-5000"
+      email="info@catalinaclosets.com"/>
       <Navbar/>
       <Homehead/>
       <span className="text-6xl flex justify-center my-10">
