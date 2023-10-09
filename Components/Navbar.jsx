@@ -53,17 +53,17 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li className={styles.navitem}>
-            <Link href="/About">Gallery</Link>
+            <Link href="/Gallery">Gallery</Link>
           </li>
       
           <li>
-            <Link href="/Login"> About</Link>
+            <Link href="/About"> About</Link>
           </li>
           <li className={styles.navitem}>
-            <Link href="/Gallery">Contact</Link>
+            <Link href="/Contact">Contact</Link>
           </li>
           <li className={styles.navitem}>
-            <Link href="/Store">Book a Consultation</Link>
+            <Link href="/Consultation">Book a Consultation</Link>
           </li>
         </ul>
       )}
