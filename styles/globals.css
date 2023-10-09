@@ -21,3 +21,16 @@
 
   color: white;  /* Assuming you want white text over images, adjust as needed */
 }
+
+.homeheadwrapper {
+  background-image: url('/library.jpg');
+  height:750px;
+  width:100%;
+  background-size:cover;
+}
+
+.homeheadhead {
+  text-shadow: 2px 2px 4px #000000;
+
+}
+

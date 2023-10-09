@@ -1,12 +1,20 @@
 import Form from "./Form"
+import { Oooh_Baby } from 'next/font/google'
+
+const Oooh = Oooh_Baby({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Homehead () {
     return (
-        <div className="homeheadwrapper">
-            <div className="homehead">
-                <div className="homeheadtext">
-                    <h1>Custom Creations</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reiciendis, ipsam possimus, explicabo, maiores deleniti nulla quo itaque saepe consectetur quis impedit magnam molestiae repellat. Quaerat perspiciatis quis fugiat doloremque?</p>
+        <div className="homeheadwrapper flex justify-center items-center mt-10">
+            <div className="homehead grid grid-cols-2">
+                <div className="homeheadtext mx-20">
+                    <span className="text-8xl text-white homeheadhead">
+                    <h1 className={Oooh.className}>Custom Creations</h1>
+                    </span>
+                    <p className="text-2xl homeheadhead text-white"> We help customers find extra space in every room of their home - let's make magic together today</p>
                 </div>
                 <div className="homeheadform">
                     <Form />
