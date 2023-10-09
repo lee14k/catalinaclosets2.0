@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar/>
       <Homehead/>
       <span className="text-6xl flex justify-center my-10">
-      <h1 className={Oooh.className}>Custom solutions for your entire home</h1></span>
+      <h1>Custom solutions for your entire home</h1></span>
       <Homegrid/>
       <Rightphoto
         heading="hear from satisfied customers"
