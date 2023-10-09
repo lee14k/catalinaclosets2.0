@@ -7,6 +7,7 @@ const images = [
   { link: "/living.jpg", header: "Living Room" },
   { link: "/mudroom.jpg", header: "Mudroom" },
   { link: "/library.jpg", header: "Library" },
+    { link: "/library.jpg", header: "Garage" },
 ];
 
 

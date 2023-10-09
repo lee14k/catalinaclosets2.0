@@ -31,7 +31,7 @@ export default function Form() {
             />
           </li>
         </ul>
-        <button className="mt-5 rounded-md bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm ">Schedule Now</button>
+        <button className="mt-5 bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm border-solid border-white border-2">Schedule Now</button>
       </form>
     </div>
   );

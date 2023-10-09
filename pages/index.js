@@ -11,7 +11,7 @@ import Rightphoto from '@/Components/Rightphoto'
 import Conbar from '@/Components/Conbar'
 import Leftphoto from '@/Components/Leftphoto'
 import { Oooh_Baby } from 'next/font/google'
-
+import Twophotobutton from '@/Components/Twophotobutton'
 const Oooh = Oooh_Baby({
   weight: '400',
   subsets: ['latin'],
@@ -19,19 +19,28 @@ const Oooh = Oooh_Baby({
 export default function Home() {
   return (
     <div>
-      <Conbar/>
+      <Conbar
+      phone=""
+      email=""/>
       <Navbar/>
       <Homehead/>
       <span className="text-6xl flex justify-center my-10">
       <h1 className={Oooh.className}>Custom solutions for your entire home</h1></span>
       <Homegrid/>
-      <Rightphoto/>
+      <Rightphoto
+        heading="hear from satisfied customers"
+        description="lorem"
+      />
       <CTA
       headlineone="Get started with a free consultation"
       headlinetwo="We'll help you find the right solution for your home"
       buttontext="Schedule a free consultation"
       />
-      <Leftphoto/>
+      <Leftphoto
+      heading="explore finishes"
+      description="lorem"
+      />
+      <Twophotobutton/>
       <Footer/>
       </div>
   )

@@ -1,5 +1,5 @@
 import Image from "next/image"
-export default function Conbar () {
+export default function Conbar ({phone, email}) {
     return (
         <div className="flex justify-between mb-10">
                    <Image 
@@ -9,8 +9,8 @@ export default function Conbar () {
         />
         <div className="flex justify-end gap-10">
         
-            <div>Phone Number</div>
-            <div>Email</div>
+            <div>{phone}</div>
+            <div>{email}</div>
             <div className="rounded-md font-semibold text-pink-800 shadow-sm ">Request Consultation</div>
         </div>
         </div>
