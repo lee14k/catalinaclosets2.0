@@ -15,7 +15,7 @@ export default function Conbar({ phone, email }) {
 
     return (
         <div className="flex justify-between mb-10">
-            <div className="flex-shrink-0 flex-grow-0"> {/* Prevent the logo from shrinking or growing */}
+            <div className="flex-shrink-0 flex-grow-0">
                 <Image
                     src='/cclogo.png'
                     height={200}
