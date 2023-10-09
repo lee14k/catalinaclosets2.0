@@ -31,11 +31,7 @@ function Navbar() {
 
   return (
     <div>
-        <Image 
-            src='/cclogo.png'
-            height={300}
-            width={300}
-        />
+     
     <div className="navbar">
       {typeof window !== "undefined" && isMobile && (
         <div

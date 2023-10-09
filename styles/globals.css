@@ -18,6 +18,7 @@
 }
 
 .gallery__caption {
+  text-shadow: 2px 2px 4px #000000;
 
   color: white;  /* Assuming you want white text over images, adjust as needed */
 }
