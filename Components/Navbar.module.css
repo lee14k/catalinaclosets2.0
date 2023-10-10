@@ -39,4 +39,5 @@
   
   .navitem {
     gap:20px;
+    display:flex;
   }
