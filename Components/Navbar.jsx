@@ -45,7 +45,7 @@ function Navbar() {
         )}
         {(showMobile || !isMobile || dropdown) && (
           
-          <ul className={`${styles.nav} ${dropdown ? styles.open : ""}`}>
+          <ul className={`${styles.nav} ${dropdown ? styles.open : ""} ${isMobile ? "mobile" : ""}`}>
             <li className={styles.navitem}>
               <Link href="/">Home</Link>
             </li>

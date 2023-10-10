@@ -43,6 +43,12 @@
   height:500px;
   background-size:cover;
 }
+
+.mobile {
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
 @media screen and (max-width: 1000px) {
 .homehead {
   display:flex;
