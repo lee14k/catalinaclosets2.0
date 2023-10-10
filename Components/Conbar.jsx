@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Form from "./Form";
 import Dropdownconsult from "./Dropdownconsult";
+import Link from "next/link";
 
 export default function Conbar({ phone, email }) {
     const [view, setView] = useState("");
@@ -16,13 +17,13 @@ export default function Conbar({ phone, email }) {
     return (
         <div className="flex justify-between mb-10">
             <div className="flex-shrink-0 flex-grow-0">
-                <a href="/">
+                <Link href="/">
                 <Image
                     src='/cclogo.png'
                     height={200}
                     width={200}
                 />
-                </a>
+                </Link>
             </div>
             <div className="flex justify-end gap-10">
                 <div>{phone}</div>

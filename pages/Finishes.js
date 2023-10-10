@@ -23,7 +23,7 @@ export default function Finishes() {
       />
       <Finishbox
         header="Solids"
-        description="Classic solid colors in a variety of shades will give your space a timeless finish"
+        description="Classic solid colors in a variety of shades will give your space a timeless finish. Below are just three of our favorites - ask to see our full selection!"
         images={matteImages}
       />
       <div className="grid grid-cols-2">

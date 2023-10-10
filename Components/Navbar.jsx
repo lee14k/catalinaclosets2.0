@@ -9,6 +9,16 @@ function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [isMobile, setIsMobile] = useState(false); // This is where setIsMobile is defined
   const [showMobile, setShowMobile] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState("");
+  const customSpacesItems = ["Space1", "Space2", "Space3"];
+  const inspirationItems = ["Inspiration1", "Inspiration2", "Inspiration3"];
+  const toggleDropdown = (dropdownName) => {
+    if (activeDropdown === dropdownName) {
+      setActiveDropdown(""); // If the clicked dropdown is already active, close it
+    } else {
+      setActiveDropdown(dropdownName);
+    }
+  };
 
   useHandleResize(setIsMobile);
 
@@ -44,25 +54,55 @@ function Navbar() {
           </div>
         )}
         {(showMobile || !isMobile || dropdown) && (
-          
-          <ul className={`${styles.nav} ${dropdown ? styles.open : ""} ${isMobile ? "mobile" : ""}`}>
+          <ul
+            className={`${styles.nav} ${dropdown ? styles.open : ""} ${
+              isMobile ? "mobile" : ""
+            }`}
+          >
             <li className={styles.navitem}>
               <Link href="/">Home</Link>
             </li>
-       
-  <li className={styles.navitem}>
-              <Link href="/Customspaces">Custom Spaces  </Link>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-</svg>
 
-          </li>
-                 <li className={styles.navitem}>
-              <Link href="/Inspiration">Inspiration</Link>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-</svg>
-
+            <li className={styles.navitem}  onClick={() => toggleDropdown("CustomSpaces")}>
+                Custom Spaces{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>{" "}
+            </li>
+             {activeDropdown === "CustomSpaces" && (
+              <ul className={`${styles.submenu} ${isMobile ? "mobile" : ""}`}>
+                {customSpacesItems.map((item, index) => (
+                  <li key={index} className={styles.navitem}>
+                    <Link href={`/${item}`}>{item}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <li className={styles.navitem}>
+              <Link className={styles.navitem} href="/Inspiration">
+                Inspiration
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Link>
             </li>
             <li className={styles.navitem}>
               <Link href="/Finishes">Finishes</Link>
