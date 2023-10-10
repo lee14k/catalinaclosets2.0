@@ -19,7 +19,7 @@ export default function Finishes() {
       <Head
         head="Finishes"
         caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
-        backgroundImageUrl="/finish.jpg" // Use this path instead of "./finish.jpg"
+        backgroundImageUrl="/finish.jpg"
       />
       <Finishbox
         header="Solids"

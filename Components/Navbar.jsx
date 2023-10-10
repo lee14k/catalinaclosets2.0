@@ -44,6 +44,7 @@ function Navbar() {
           </div>
         )}
         {(showMobile || !isMobile || dropdown) && (
+          
           <ul className={`${styles.nav} ${dropdown ? styles.open : ""}`}>
             <li className={styles.navitem}>
               <Link href="/">Home</Link>
