@@ -16,11 +16,13 @@ export default function Conbar({ phone, email }) {
     return (
         <div className="flex justify-between mb-10">
             <div className="flex-shrink-0 flex-grow-0">
+                <a href="/">
                 <Image
                     src='/cclogo.png'
                     height={200}
                     width={200}
                 />
+                </a>
             </div>
             <div className="flex justify-end gap-10">
                 <div>{phone}</div>

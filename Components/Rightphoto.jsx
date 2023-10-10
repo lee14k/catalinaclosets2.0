@@ -3,12 +3,12 @@ import Navbar from './Navbar';
 
 export default function Rightphoto ({heading, description}) {
     return (
-        <div className="flex justify-between ">
-            <div className='flex-shrink-0'>
+        <div className="flex flex-col above-xs:flex-row justify-between">
+            <div className='flex-shrink-0 mx-auto above-xs:mx-0'>
             <Image
                 src="/homeoffice.jpg"
                 alt="Picture of the author"
-                width={900}
+                width={600}
                 height={900}
                 />
             </div>

@@ -13,7 +13,7 @@ export default function Leftphoto ({heading, description}) {
         </div>
            <div>
             <Image
-                src="/library.jpg"
+                src="/finish.jpg"
                 alt="Picture of the author"
                 width={500}
                 height={500}
