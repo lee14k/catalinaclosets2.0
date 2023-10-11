@@ -10,7 +10,7 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(false); // This is where setIsMobile is defined
   const [showMobile, setShowMobile] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState("");
-  const customSpacesItems = ["Space1", "Space2", "Space3"];
+  const customSpacesItems = ["Closets", "Bedrooms", "Kitchens", "Living Rooms","Office", "Mudroom", "Laundry", "Gargae"];
   const inspirationItems = ["Inspiration1", "Inspiration2", "Inspiration3"];
   const toggleDropdown = (dropdownName) => {
     if (activeDropdown === dropdownName) {
@@ -63,7 +63,9 @@ function Navbar() {
               <Link href="/">Home</Link>
             </li>
 
-            <li className={styles.navitem}  onClick={() => toggleDropdown("CustomSpaces")}>
+<button>
+            <li className={styles.navitem}onClick={() => toggleDropdown("CustomSpaces")}>
+           
                 Custom Spaces{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +80,7 @@ function Navbar() {
                   />
                 </svg>{" "}
             </li>
-             {activeDropdown === "CustomSpaces" && (
+               {activeDropdown === "CustomSpaces" && (
               <ul className={`${styles.submenu} ${isMobile ? "mobile" : ""}`}>
                 {customSpacesItems.map((item, index) => (
                   <li key={index} className={styles.navitem}>
@@ -87,6 +89,8 @@ function Navbar() {
                 ))}
               </ul>
             )}
+            </button>
+          
             <li className={styles.navitem}>
               <Link className={styles.navitem} href="/Inspiration">
                 Inspiration
