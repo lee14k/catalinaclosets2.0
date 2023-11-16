@@ -1,5 +1,5 @@
 import { Oooh_Baby } from "next/font/google";
-import { Zoom } from 'react-reveal';
+import { Zoom } from 'react-reveal/Zoom';
 
 const Oooh = Oooh_Baby({
   weight: "400",
