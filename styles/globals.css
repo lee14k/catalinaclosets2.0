@@ -36,7 +36,7 @@
 }
 
 .formwrapper {
-  background-color: rgba(255, 255, 255, 0.49);
+  background-color: rgba(255, 255, 255, 1);
   height:400px;
 }
 .headbg {
@@ -48,6 +48,21 @@
   flex-direction:column;
   justify-content:center;
   align-items:center;
+}
+
+.twoimoen {
+  position: relative;
+}
+
+.twoimoen img {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.twoimoen div {
+  position: absolute;
+  right: -100%; /* Initially offscreen */
+  transition: right 0.5s ease-in-out;
 }
 
 

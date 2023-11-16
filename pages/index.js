@@ -46,8 +46,11 @@ export default function Home() {
         headlinetwo="We'll help you find the right solution for your home"
         buttontext="Schedule a free consultation"
       />
-      <Leftphoto heading="explore finishes" description="lorem" />
-      <Twophotobutton />
+      <Leftphoto
+        heading="Explore finishes"
+        description="You will be amazed by all the new sleek colors and rich textures available. There are hundreds! These are called TFL (Thermally Fused Laminate) panels which are made up of recycled wood on the inside and a durable beautiful shell on the outside. They are really taking off in the industry for high end projects."
+      />
+      <Twophotobutton header="Customize your Space" />
       <Iconbar />
       <Footer />
     </div>

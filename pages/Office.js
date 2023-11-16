@@ -20,7 +20,7 @@ export default function Accessories() {
       <Conbar />
       <Navbar />
       <Head
-        head="Finishes"
+        head="Home Offices"
         caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
         backgroundImageUrl="/finish.jpg"
       />

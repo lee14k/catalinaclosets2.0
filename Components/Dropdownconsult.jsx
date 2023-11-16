@@ -22,15 +22,7 @@ export default function Dropdownconsult () {
               placeholder="Phone Number"
             />
           </li>
-          <li>
-            {" "}
-            <input
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Message"
-            />
-          </li>
+      
         </ul>
         <button className="mt-5 bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm border-solid border-white border-2">Schedule Now</button>
       </form>

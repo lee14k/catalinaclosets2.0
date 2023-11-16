@@ -40,12 +40,12 @@ function Navbar() {
 
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar pt-48">
         {typeof window !== "undefined" && isMobile && (
           <div
             className={`${styles.hamburgericon} ${
               showMobile && !dropdown ? styles.open : ""
-            }`}
+            } `}
             onClick={toggleHamburger}
           >
             <div className={styles.line} />

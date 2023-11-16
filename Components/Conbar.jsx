@@ -15,8 +15,8 @@ export default function Conbar({ phone, email }) {
 };
 
     return (
-        <div className="flex justify-between mb-10">
-            <div className="flex-shrink-0 flex-grow-0">
+        <div className="flex justify-between fixed bg-white w-full">
+            <div className="flex-shrink-0 flex-grow-0 mt-8 mb-10">
                 <Link href="/">
                 <Image
                     src='/cclogo.png'
@@ -25,10 +25,10 @@ export default function Conbar({ phone, email }) {
                 />
                 </Link>
             </div>
-            <div className="flex justify-end gap-10">
-                <div>{phone}</div>
-                <div>{email}</div>
-                <div className="rounded-md font-semibold text-pink-800 shadow-sm">
+            <div className="flex justify-end gap-10 mb-20 ">
+                <div className='mt-12'>{phone}</div>
+                <div className='mt-12'>{email}</div>
+                <div className="rounded-md font-semibold text-pink-800 shadow-sm mt-12">
                     <button onClick={formPop}>
                         Request Consultation
                     </button>
