@@ -1,5 +1,5 @@
+import React, { useState, useEffect } from 'react';
 import { Oooh_Baby } from "next/font/google";
-import { Zoom } from 'react-reveal/Zoom';
 
 const Oooh = Oooh_Baby({
   weight: "400",
@@ -7,20 +7,35 @@ const Oooh = Oooh_Baby({
 });
 
 export default function Twophotobutton({ header }) {
-  
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 200) { // Adjust this value based on your layout
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Event listener for scroll
+    window.addEventListener('scroll', onScroll);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
 
   return (
     <div className="flex justify-center items-center flex-col gap-10 mt-20">
       <div className="text-6xl">
         <h1 className={Oooh.className}>{header}</h1>
       </div>
-      <div className="grid grid-cols-1 gap-10">
+      <div className="grid grid-cols- gap-10">
        
-        <div >
-          <Zoom>
+        <div className={`transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <img src="library.jpg" alt="Image" />
-</Zoom>
-          <div >
+          <div className={`absolute right-0 transform ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}>
             Text Overlay
           </div>
         </div>
