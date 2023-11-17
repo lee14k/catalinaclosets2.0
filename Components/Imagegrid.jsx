@@ -4,7 +4,7 @@ export default function Imagegrid({ images }) {
   };
   return (
     <div className="gallerycontainer flex justify-center mb-10">
-      <div className="container">
+      <div className="container ">
         <div className="gallery">
           {images.map((item, index) => (
             <div

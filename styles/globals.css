@@ -65,6 +65,12 @@
   transition: right 0.5s ease-in-out;
 }
 
+.twophoto {
+  width:500px;
+  height:500px;
+  background-image: url('/library.jpg');
+  background-size:cover;
+}
 
 @media screen and (max-width: 1000px) {
 .homehead {

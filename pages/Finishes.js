@@ -6,6 +6,7 @@ import Footer from "@/Components/Footer";
 import Image from "next/image";
 import Conbar from "@/Components/Conbar";
 import CTA from "@/Components/CTA";
+import Swatchspace from "@/Components/Swatchspace";
 export default function Finishes() {
   const matteImages = [
     { link: "/matteone.png", header: "Matte 1" },
@@ -21,16 +22,15 @@ export default function Finishes() {
         caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
         backgroundImageUrl="/finish.jpg"
       />
+      <Swatchspace
+      
+      />
       <Finishbox
         header="Solids"
-        description="Classic solid colors in a variety of shades will give your space a timeless finish. Below are just three of our favorites - ask to see our full selection!"
+        description="Classic solid colors in a wid evariety of shades will give your space a timeless finish and endless appeal."
         images={matteImages}
       />
-      <div className="grid grid-cols-2">
-        <Image src="/closets.jpg" width={500} height={500} />
-        <Image src="/closets.jpg" width={500} height={500} />
-        <Image src="/closets.jpg" width={500} height={500} />
-      </div>
+   
       <Finishbox
         header="Woodgrains"
         description="lovely mattes"

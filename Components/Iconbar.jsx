@@ -15,14 +15,14 @@ export default function Iconbar() {
       icon: TruckIcon,
     },
      {
-      caption: "Wide variety of colors, finishes and details to make the space your ownn",
+      caption: "Wide variety of details to make the space your own",
       icon: SwatchIcon,
     },
   ];
   return <div >
-    <dl className="grid grid-cols-3">
+    <dl className="grid grid-cols-3 mx-16 my-16">
         {items.map((item, index) => (
-            <div className="items-center gap-5">
+            <div className="items-center mx-16">
             <dt>
                 <item.icon className="h-10 w-10 text-pink-800" />
             </dt>

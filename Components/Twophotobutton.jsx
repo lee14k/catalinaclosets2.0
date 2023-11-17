@@ -11,7 +11,7 @@ export default function Twophotobutton({ header }) {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 200) { // Adjust this value based on your layout
+      if (window.scrollY > 2000) { // Adjust this value based on your layout
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -31,12 +31,12 @@ export default function Twophotobutton({ header }) {
       <div className="text-6xl">
         <h1 className={Oooh.className}>{header}</h1>
       </div>
-      <div className="grid grid-cols- gap-10">
+      <div>
        
-        <div className={`transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <img src="library.jpg" alt="Image" />
+        <div className={`twophoto transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+                      Text Overlay
+
           <div className={`absolute right-0 transform ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}>
-            Text Overlay
           </div>
         </div>
       </div>
