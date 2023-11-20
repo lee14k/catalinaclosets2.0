@@ -71,7 +71,10 @@
   background-image: url('/library.jpg');
   background-size:cover;
 }
-
+.currentimage {
+  width:100px;
+  height:auto;
+}
 @media screen and (max-width: 1000px) {
 .homehead {
   display:flex;
@@ -79,3 +82,15 @@
 }
 
 }
+
+.stage {
+  display:flex;
+}
+
+.navigation {
+  z-index:-1;
+}
+.condrop {
+  z-index:2;
+}
+

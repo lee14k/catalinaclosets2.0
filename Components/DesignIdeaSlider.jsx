@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function DesignIdeaSlider({ images }) {
+export default function DesignIdeaSlider({ images, descriptions, header }) {
 
   const [currentIdx, setCurrentIdx] = useState(0);
 
@@ -16,10 +16,17 @@ export default function DesignIdeaSlider({ images }) {
     <div>
       <div>
         <button onClick={prevImage}>Previous</button>
-        <img src={images[currentIdx]} alt={`Slide ${currentIdx}`} />
+        <div className="stage">
+          <img className="currentimage" src={images[currentIdx]} alt={`Slide ${currentIdx}`} />
+          {/* Display the description corresponding to the current image */}
+          <div className='flex flex-col'>
+          <h1 className='text-2xl'>{header[currentIdx]}</h1>
+          <p>{descriptions[currentIdx]}</p>
+          </div>
+        </div>
         <button onClick={nextImage}>Next</button>
       </div>
-      <div>
+      <div className='flex'>
         <img
           src={images[(currentIdx - 1 + images.length) % images.length]}
           alt={`Slide ${currentIdx - 1}`}

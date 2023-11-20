@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     list-style: none;
     padding-top:10px;
-  }
+    z-index:1;  }
   
   .navbar .hamburgericon {
     display: flex;

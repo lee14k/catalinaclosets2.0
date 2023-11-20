@@ -1,7 +1,7 @@
 export default function Dropdownconsult () {
     return (
         <div>
-            <div className="formwrapper flex flex-col justify-center items-center">
+            <div className="formwrapper flex flex-col justify-center items-center dropdownconsult">
       <h1 className="text-2xl mb-10">Schedule your Consultation</h1>
       <form action="">
         <ul className="flex flex-col gap-5">
