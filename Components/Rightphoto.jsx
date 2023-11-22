@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 export default function Rightphoto ({heading, description}) {
     return (
-        <div className="flex flex-col above-xs:flex-row justify-between">
+        <div className="rightphotocontainer flex flex-col above-xs:flex-row justify-between">
             <div className='flex-shrink-0 mx-auto above-xs:mx-0'>
             <Image
                 src="/homeoffice.jpg"
@@ -12,7 +12,7 @@ export default function Rightphoto ({heading, description}) {
                 height={900}
                 />
             </div>
-        <div className="mx-40">
+        <div className="mx-40 righttextcontainer">
             <h2 className="text-4xl">{heading}</h2>
             <p>{description} </p>
             <button className="mt-5 bg px-6 py-3 text-xl font-semibold shadow-sm border-solid border-pink-800 border-2">Learn More</button>

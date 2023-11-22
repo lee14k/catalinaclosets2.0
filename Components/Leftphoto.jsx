@@ -5,7 +5,7 @@ export default function Leftphoto ({heading, description}) {
     return (
         <div className="flex flex-col above-xs:flex-row justify-between">
          
-        <div className="mx-40">
+        <div className="mx-40 lefttextcontainer righttextcontainer">
             <h2 className="text-4xl">{heading}</h2>
             <p>{description} </p>
             <button className="mt-5 rounded-md bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm ">Learn More</button>

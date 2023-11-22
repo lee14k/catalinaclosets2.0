@@ -5,7 +5,9 @@ import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
 import DesignIdeaSlider from '../components/DesignIdeaSlider';
 import Form from "@/Components/Form";
+import Spacecta from "@/Components/Spacecta";
 export default function Closets() {
+
   const accImages = [
     { link: "/bedroom.jpg", header: "Bedroom" },
     { link: "/homeoffice.jpg", header: "Home Office" },
@@ -37,14 +39,23 @@ export default function Closets() {
     <div>
       <Conbar />
       <Navbar />
-      <div className="relative flex">
+      <div className="relative flex width-full">
         <Head
           head="Closets"
           caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
           backgroundImageUrl="/closets.jpg"
         />
-        <Form className="absolute top-20 left-20" />
+        <div className="mx-10 my-20 width-full">
+        <Form />
+        </div>
       </div>
+      
+      <div   className="closetcall mx-10 my-10">
+      <Spacecta headlineone="Get started with a free consultation"
+        headlinetwo="We'll help you find the right solution for your home"
+        buttontext="Schedule a free consultation" 
+      />
+        </div>
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>
