@@ -16,16 +16,17 @@ export default function Conbar({ phone, email }) {
 
     return (
         <div className="flex justify-between fixed bg-white w-full condrop">
-            <div className="flex-shrink-0 flex-grow-0 mt-8 mb-10">
+            <div className="flex-shrink-0 flex-grow-0 mt-8 mb-0">
                 <Link href="/">
                 <Image
+                    className="mx-10"
                     src='/cclogo.png'
-                    height={200}
-                    width={200}
+                    height={300}
+                    width={300}
                 />
                 </Link>
             </div>
-            <div className="flex justify-end gap-10 mb-20 ">
+            <div className="flex justify-end gap-10 mb-10 ">
                 <div className='mt-12'>{phone}</div>
                 <div className='mt-12'>{email}</div>
                 <div className="rounded-md font-semibold text-pink-800 shadow-sm mt-12">

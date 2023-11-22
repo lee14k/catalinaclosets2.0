@@ -40,7 +40,7 @@ function Navbar() {
 
   return (
     <div className="navigation">
-      <div className="navbar pt-48">
+      <div className="navbar pt-48 ">
         {typeof window !== "undefined" && isMobile && (
           <div
             className={`${styles.hamburgericon} ${
