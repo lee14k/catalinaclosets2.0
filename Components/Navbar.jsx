@@ -11,7 +11,6 @@ function Navbar() {
   const [showMobile, setShowMobile] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState("");
   const customSpacesItems = ["Closets", "Bedrooms", "Kitchens", "Living Rooms","Office", "Mudroom", "Laundry", "Garage"];
-  const inspirationItems = ["Inspiration1", "Inspiration2", "Inspiration3"];
   const toggleDropdown = (dropdownName) => {
     if (activeDropdown === dropdownName) {
       setActiveDropdown(""); // If the clicked dropdown is already active, close it
@@ -92,7 +91,7 @@ function Navbar() {
             </button>
           
             <li className={styles.navitem}>
-              <Link className={styles.navitem} href="/Inspiration">
+              <Link className={styles.navitem} href="/Gallery">
                 Gallery
            
               </Link>

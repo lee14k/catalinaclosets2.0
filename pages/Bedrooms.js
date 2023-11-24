@@ -3,8 +3,11 @@ import Imagegrid from "@/Components/Imagegrid";
 import Navbar from "../Components/Navbar";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
+import DesignIdeaSlider from '../components/DesignIdeaSlider';
+import Form from "@/Components/Form";
+import Spacecta from "@/Components/Spacecta";
+export default function Closets() {
 
-export default function Accessories() {
   const accImages = [
     { link: "/bedroom.jpg", header: "Bedroom" },
     { link: "/homeoffice.jpg", header: "Home Office" },
@@ -15,17 +18,45 @@ export default function Accessories() {
     { link: "/library.jpg", header: "Library" },
     { link: "/library.jpg", header: "Garage" },
   ];
+        const images = [
+'/library.jpg',
+'/closets.jpg',
+'living.jpg'
+  ];
+
+   const headers = [
+  'Description for the library',
+  'Description for the closets',
+  'Description for the living room'
+];
+
+ const descriptions = [
+  'Description for the library',
+  'Description for the closets',
+  'Description for the living room'
+];
   return (
     <div>
       <Conbar />
       <Navbar />
-      <Head
-        head="Bedrooms"
-        caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
-        backgroundImageUrl="/finish.jpg"
+      <div className="spacepageheadwrap relative flex width-full">
+        <Head
+          head="Bedrooms"
+          caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
+          backgroundImageUrl="/closets.jpg"
+        />
+        <div className="mx-10 my-20 width-full">
+        <Form />
+        </div>
+      </div>
+      
+      <div   className="closetcall mx-10 my-10">
+      <Spacecta headlineone="Get started with a free consultation"
+        headlinetwo="We'll help you find the right solution for your home"
+        buttontext="Schedule a free consultation" 
       />
-      <Imagegrid images={accImages} />
-
+        </div>
+      <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>
   );

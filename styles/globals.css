@@ -104,18 +104,53 @@ grid-template-columns: repeat(1, 1fr); /* Creates 4 equal columns */
     margin-right:200px;
 
 }
+
+.conwrap {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:0px;
+  position:relative;
+  z-index:1;
+}
+
+.contextwrap {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:0px;
+  
+}
+
+.navigation {
+  position:relative;
+  
+}
+
+.navbar {
+  position:relative;
+}
+
+.leftphotoimg {
+width:100%;
+
+}
+.leftimgcontain {
+  width:100%;
+}
+
+.spacepageheadwrap {
+  flex-direction:column;
+}
 }
 
 .stage {
   display:flex;
 }
 
-.navigation {
-  z-index:-1;
-}
-.condrop {
-  z-index:2;
-}
+
 
 .closetcall {
 
