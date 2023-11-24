@@ -19,14 +19,14 @@ const Oooh = Oooh_Baby({
 });
 export default function Home() {
   const homeImages = [
-    { link: "/bedroom.jpg", header: "Bedroom" },
-    { link: "/homeoffice.jpg", header: "Home Office" },
-    { link: "/kitchenpantry.jpg", header: "Kitchen Pantry" },
-    { link: "/laundryroom.jpg", header: "Laundry Room" },
-    { link: "/living.jpg", header: "Living Room" },
-    { link: "/mudroom.jpg", header: "Mudroom" },
-    { link: "/library.jpg", header: "Library" },
-    { link: "/library.jpg", header: "Garage" },
+    { link: "/bedroom.jpg", header: "Bedroom", page: '/Bedrooms'},
+    { link: "/homeoffice.jpg", header: "Home Office", page: '/Office' },
+    { link: "/kitchenpantry.jpg", header: "Kitchen Pantry", page: '/Kitchen' },
+    { link: "/laundryroom.jpg", header: "Laundry Room", page: '/Laundry' },
+    { link: "/living.jpg", header: "Living Room", page: '/Livingrooms' },
+    { link: "/mudroom.jpg", header: "Mudroom", page: '/Mudrooms' },
+    { link: "/library.jpg", header: "Library", page: '/Library' },
+    { link: "/library.jpg", header: "Garage", page: '/Garage' },
   ];
   return (
     <div>
