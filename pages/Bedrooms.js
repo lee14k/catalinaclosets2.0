@@ -39,13 +39,13 @@ export default function Closets() {
     <div>
       <Conbar />
       <Navbar />
-      <div className="spacepageheadwrap relative flex width-full">
+      <div className="spacepageheadwrap  flex ">
         <Head
           head="Bedrooms"
           caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
           backgroundImageUrl="/closets.jpg"
         />
-        <div className="mx-10 my-20 width-full">
+        <div className="mx-10 my-20 width-3/4">
         <Form />
         </div>
       </div>

@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <div className="formwrapper flex flex-col justify-center mx-10 ">
+    <div className="formwrapper flex flex-col justify-center mx-48 w-3/4">
       <h1 className="text-2xl mb-10  ml-10 ">Schedule your Consultation</h1>
       <form className="ml-10" action="">
         <ul className="flex flex-col gap-5">
