@@ -6,7 +6,7 @@ export default function Imagegrid({ images }) {
       <div className="container ">
         <div className="gallery">
           {images.map((item, index) => (
-            <Link key={index} href={item.page} passHref>
+            <Link href={item.page} >
                 <div style={{ backgroundImage: `url(${item.link})` }} className={`flex justify-center items-center gallery__item gallery__item--${index + 1}`}>
                   <figcaption className="gallery__caption text-4xl flex">
                     {item.header}

@@ -10,7 +10,7 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(false); // This is where setIsMobile is defined
   const [showMobile, setShowMobile] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState("");
-  const customSpacesItems = ["Closets", "Bedrooms", "Kitchens", "Living Rooms","Office", "Mudroom", "Laundry", "Garage"];
+  const customSpacesItems = ["Closets", "Bedrooms", "Kitchen", "Living Rooms","Office", "Mudroom", "Laundry", "Garage"];
   const toggleDropdown = (dropdownName) => {
     if (activeDropdown === dropdownName) {
       setActiveDropdown(""); // If the clicked dropdown is already active, close it

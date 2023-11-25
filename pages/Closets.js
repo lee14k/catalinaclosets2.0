@@ -39,7 +39,6 @@ export default function Closets() {
     <div>
       <Conbar />
       <Navbar />
-      <div className="spacepageheadwrap relative flex width-full">
         <Head
           head="Closets"
           caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
@@ -48,7 +47,6 @@ export default function Closets() {
         <div className="mx-10 my-20 width-full">
         <Form />
         </div>
-      </div>
       
       <div   className="closetcall mx-10 my-10">
       <Spacecta headlineone="Get started with a free consultation"
@@ -56,6 +54,7 @@ export default function Closets() {
         buttontext="Schedule a free consultation" 
       />
         </div>
+        <h1>Closet Design Ideas</h1>
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>

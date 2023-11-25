@@ -6,6 +6,7 @@ import Footer from "@/Components/Footer";
 import Image from "next/image";
 import Conbar from "@/Components/Conbar";
 import CTA from "@/Components/CTA";
+
 import Swatchspace from "@/Components/Swatchspace";
 export default function Finishes() {
   const matteImages = [
@@ -22,15 +23,31 @@ export default function Finishes() {
         caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
         backgroundImageUrl="/finish.jpg"
       />
-      <Swatchspace
-      
-      />
+    
       <Finishbox
         header="Solids"
-        description="Classic solid colors in a wid evariety of shades will give your space a timeless finish and endless appeal."
+        description="Classic solid colors in a wide variety of shades will give your space a timeless finish and endless appeal."
         images={matteImages}
       />
-   
+      <div className="flex gap-10 justify-center items-center">
+
+     <Swatchspace
+     header='Super White'
+      imageSrc="/closets.jpg"
+    imageWidth={500}
+    imageHeight={300}
+     imageSrcSpace="/homeoffice.jpg"
+    imageWidthSpace={720}
+    imageHeightSpace={500}
+      />
+   <Swatchspace
+   header="Baby Blue"
+      imageSrc="/homeoffice.jpg"
+    imageWidth={400}
+    imageHeight={900}
+    
+      />
+      </div>
       <Finishbox
         header="Woodgrains"
         description="lovely mattes"
@@ -41,14 +58,24 @@ export default function Finishes() {
         description="lovely mattes"
         images={matteImages}
       />
-      <div>
-        <div>
-          <h1>Solid Matte White</h1>
-          <p>
+      <div >
+        <div className="grid grid-cols-2 my-48">
+        <div className="mx-24 ">
+ <h1 className="text-4xl">Solid Matte White</h1>
+          <p className="text-xl">
             Our most popular finish by far, solid matte white can be used
             throughout an entire organization system or integrated as a
             complement or accent.
           </p>
+        </div>
+           <div>
+           <Image
+                src="/allwhite.jpg"
+                alt="Picture of the author"
+                width={600}
+                height={900}
+                />
+        </div>
         </div>
 
         <div>

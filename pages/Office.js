@@ -3,30 +3,51 @@ import Imagegrid from "@/Components/Imagegrid";
 import Navbar from "../Components/Navbar";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
+import DesignIdeaSlider from '../components/DesignIdeaSlider';
+import Form from "@/Components/Form";
+import Spacecta from "@/Components/Spacecta";
 
-export default function Accessories() {
-  const accImages = [
-    { link: "/bedroom.jpg", header: "Bedroom" },
-    { link: "/homeoffice.jpg", header: "Home Office" },
-    { link: "/kitchenpantry.jpg", header: "Kitchen Pantry" },
-    { link: "/laundryroom.jpg", header: "Laundry Room" },
-    { link: "/living.jpg", header: "Living Room" },
-    { link: "/mudroom.jpg", header: "Mudroom" },
-    { link: "/library.jpg", header: "Library" },
-    { link: "/library.jpg", header: "Garage" },
+export default function Office() {
+       const images = [
+'/library.jpg',
+'/closets.jpg',
+'living.jpg'
   ];
+     const headers = [
+  'Description for the library',
+  'Description for the closets',
+  'Description for the living room'
+];
+
+ const descriptions = [
+  'Description for the library',
+  'Description for the closets',
+  'Description for the living room'
+];
   return (
     <div>
       <Conbar />
       <Navbar />
-      <Head
-        head="Home Offices"
-        caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
-        backgroundImageUrl="/finish.jpg"
+     <div className="spacepageheadwrap  flex ">
+        <Head
+          head="Home Office"
+          caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
+          backgroundImageUrl="/closets.jpg"
+        />
+        <div className="mx-10 my-20 width-3/4">
+        <Form />
+        </div>
+      </div>
+      
+      <div   className="closetcall mx-10 my-10">
+      <Spacecta headlineone="Get started with a free consultation"
+        headlinetwo="We'll help you find the right solution for your home"
+        buttontext="Schedule a free consultation" 
       />
-      <Imagegrid images={accImages} />
-
+        </div>
+      <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>
   );
 }
+

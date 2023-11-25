@@ -19,7 +19,7 @@ export default function Iconbar() {
       icon: SwatchIcon,
     },
   ];
-  return <div className="flex justify-center align-center" >
+  return <div className="flex justify-center align-center bg-slate-100" >
     <dl className="grid grid-cols-3 mx-12 my-16 iconcontainer">
         {items.map((item) => (
             <div className="items-center mx-16">

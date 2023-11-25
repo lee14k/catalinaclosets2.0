@@ -37,19 +37,28 @@ export default function Home() {
         <h1>Custom solutions for your entire home</h1>
       </span>
       <Imagegrid images={homeImages} />
-      <Rightphoto
-        heading="From tight squeezes to full walk-ins, we have a closet for you"
-        description="We offer a wide variety of closet solutions to fit your needs. Whether you're looking for a simple reach-in closet or a full walk-in, we have the solution for you. Our designers will work with you to create a custom solution that fits your needs and your budget."
-      />
+   <Rightphoto 
+    heading="Your Heading Here"
+    description="Your description here."
+    imageSrc="/homeoffice.jpg"
+    imageAlt="Description of the image"
+    imageWidth={600}
+    imageHeight={900}
+/>
+
       <CTA
         headlineone="Get started with a free consultation"
         headlinetwo="We'll help you find the right solution for your home"
         buttontext="Schedule a free consultation"
       />
-      <Leftphoto
-        heading="Explore finishes"
-        description="You will be amazed by all the new sleek colors and rich textures available. There are hundreds! These are called TFL (Thermally Fused Laminate) panels which are made up of recycled wood on the inside and a durable beautiful shell on the outside. They are really taking off in the industry for high end projects."
-      />
+     <Leftphoto 
+    heading="Your Heading Here"
+    description="Your description here."
+    imageSrc="/finish.jpg"
+    imageAlt="Description of the image"
+    imageWidth={600}
+    imageHeight={500}
+/>
       <Twophotobutton header="Customize your Space" />
       <Iconbar />
       <Footer />

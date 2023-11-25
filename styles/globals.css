@@ -72,7 +72,7 @@
   background-size:cover;
 }
 .currentimage {
-  width:100px;
+  width:500px;
   height:auto;
 }
 @media screen and (max-width: 1000px) {
@@ -149,6 +149,9 @@ width:100%;
 
 .stage {
   display:flex;
+  height:500px;
+  width:500px;
+  background-size:cover;
 }
 
 .modal {
@@ -192,4 +195,19 @@ width:100%;
 .closetcall {
 
   background-color:green;
+}
+
+.headtextshadow {
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.linequote {
+  background-color:black;
+  height:85%;
+  width:1px;
+}
+
+.designslidertext {
+  
 }
