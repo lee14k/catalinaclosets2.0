@@ -3,7 +3,7 @@ import Imagegrid from "@/Components/Imagegrid";
 import Navbar from "../Components/Navbar";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
-import DesignIdeaSlider from '../components/DesignIdeaSlider';
+import DesignIdeaSlider from '../Components/DesignIdeaSlider';
 import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
 export default function Mudrooms() {

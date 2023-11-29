@@ -145,7 +145,18 @@ width:100%;
 .spacepageheadwrap {
   flex-direction:column;
 }
+
+.headspacewrapper {
+  display:flex;
+  flex-direction:column;
 }
+ .headwrap{
+        display: grid;
+        grid-template-columns: 1fr; /* This makes it a single column */
+    }
+
+}
+
 
 .stage {
   display:flex;
