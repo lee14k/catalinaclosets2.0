@@ -102,9 +102,7 @@ function Navbar() {
             <li className={styles.navitem}>
               <Link href="/Consultation">Book a Consultation</Link>
             </li>
-            <li className={styles.navitem}>
-              <Link href="/Contact">Contact</Link>
-            </li>
+          
           </ul>
         )}
       </div>
