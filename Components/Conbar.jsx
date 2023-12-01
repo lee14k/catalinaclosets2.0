@@ -15,8 +15,8 @@ export default function Conbar({ phone, email }) {
 };
 
     return (
-        <div className="conwrap flex justify-between fixed bg-white w-full condrop ">
-            <div className="flex-shrink-0 flex-grow-0 mt-8 mb-0">
+        <div className="conwrap flex justify-between fixed bg-white w-full condrop z-10 ">
+            <div className="flex-shrink-0 flex-grow-0 mt-8 mb-0 z-10">
                 <Link href="/">
                 <Image
                     className="mx-10"
