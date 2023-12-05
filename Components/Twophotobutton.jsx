@@ -33,12 +33,7 @@ export default function Twophotobutton({ header }) {
       </div>
       <div>
        
-        <div className={`twophoto transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                      Text Overlay
-
-          <div className={`absolute right-0 transform ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}>
-          </div>
-        </div>
+    
       </div>
       <button>Learn More</button>
     </div>
