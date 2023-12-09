@@ -54,7 +54,7 @@ export default function Closets() {
         buttontext="Schedule a free consultation" 
       />
         </div>
-        <h1>Closet Design Ideas</h1>
+        <h1>Custom Closet Design Ideas</h1>
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>

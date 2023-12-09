@@ -45,6 +45,8 @@ export default function Closets() {
         buttontext="Schedule a free consultation" 
       />
         </div>
+                <h1>Custom Bedroom Design Ideas</h1>
+
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Spaceform/>
       <Footer />

@@ -45,6 +45,8 @@ export default function Office() {
         buttontext="Schedule a free consultation" 
       />
         </div>
+                <h1>Custom Office Design Ideas</h1>
+
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>
