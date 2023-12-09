@@ -128,10 +128,17 @@ grid-template-columns: repeat(1, 1fr); /* Creates 4 equal columns */
 .navigation {
   position:relative;
   
+  
+}
+
+.hamburgwrap {
+ margin-left:47%;
 }
 
 .navbar {
   position:relative;
+    padding-top:0px;
+
 }
 
 .leftphotoimg {

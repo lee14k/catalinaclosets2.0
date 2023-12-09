@@ -40,11 +40,12 @@ function Navbar() {
   return (
     <div className="navigation">
       <div className="navbar pt-48 ">
+        <div className="hamburgwrap">
         {typeof window !== "undefined" && isMobile && (
           <div
             className={`${styles.hamburgericon} ${
               showMobile && !dropdown ? styles.open : ""
-            } `}
+            }  `}
             onClick={toggleHamburger}
           >
             <div className={styles.line} />
@@ -52,6 +53,7 @@ function Navbar() {
             <div className={styles.line} />
           </div>
         )}
+        </div>
         {(showMobile || !isMobile || dropdown) && (
           <ul
             className={`${styles.nav} ${dropdown ? styles.open : ""} ${
