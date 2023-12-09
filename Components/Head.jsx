@@ -4,7 +4,7 @@ export default function Head ({head, caption, backgroundImageUrl}) {
     backgroundImage:`url(${backgroundImageUrl})`,
     }
     return (
-        <div className="w-full  ">
+        <div className="w-full h-full pt-24 headercontainer  ">
         <div className=" ">
             
 <div className="headbg  flex justify-center items-center mt-10 " style={style}>

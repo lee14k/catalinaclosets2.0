@@ -40,7 +40,7 @@
   height:400px;
 }
 .headbg {
-  height:500px;
+  height:100%;
   background-size:cover;
 }
 
@@ -153,6 +153,18 @@ width:100%;
  .headwrap{
         display: grid;
         grid-template-columns: 1fr; /* This makes it a single column */
+    }
+    .homeheadform {
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:0px;
+      position:relative;
+      z-index:10;
+    }
+
+    .headercontainer {
     }
 
 }
