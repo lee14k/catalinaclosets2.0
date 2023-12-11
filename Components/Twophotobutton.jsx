@@ -31,7 +31,7 @@ export default function Twophotobutton({ header }) {
       <div className="text-6xl">
         <h1 className={Oooh.className}>{header}</h1>
       </div>
-      <div>
+      <div className="gridfour">
        
     
       </div>
