@@ -241,3 +241,9 @@ width:100%;
 .designslidertext {
   
 }
+
+.homefourimage {
+  height:300px;
+  width:300px;
+  background-size:cover;
+}

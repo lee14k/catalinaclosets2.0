@@ -44,15 +44,16 @@ export default function Closets() {
           caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
           backgroundImageUrl="/closets.jpg"
         />
-        <div className="mx-10 my-20 width-full">
-        <Form />
-        </div>
+      
       
       <div   className="closetcall mx-10 my-10">
       <Spacecta headlineone="Get started with a free consultation"
         headlinetwo="We'll help you find the right solution for your home"
         buttontext="Schedule a free consultation" 
       />
+        <div className="mx-10 my-20 width-full">
+        <Form />
+        </div>
         </div>
         <h1>Custom Closet Design Ideas</h1>
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>

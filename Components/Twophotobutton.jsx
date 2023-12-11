@@ -6,24 +6,19 @@ const Oooh = Oooh_Baby({
   subsets: ["latin"],
 });
 
+const Gridz = ({ imgSrc, description, buttonText }) => (
+  <div className="grid-item">
+    <img src={imgSrc} alt="description" className="homefourimage" />
+    <p>{description}</p>
+    <button>{buttonText}</button>
+  </div>
+);
+
 export default function Twophotobutton({ header }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 2000) { // Adjust this value based on your layout
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    // Event listener for scroll
-    window.addEventListener('scroll', onScroll);
-
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
+    // your existing useEffect logic
   }, []);
 
   return (
@@ -31,9 +26,11 @@ export default function Twophotobutton({ header }) {
       <div className="text-6xl">
         <h1 className={Oooh.className}>{header}</h1>
       </div>
-      <div className="gridfour">
-       
-    
+      <div className="gridfour grid grid-cols-2 gap-4">
+        <Gridz imgSrc="accessorydrawers.jpg" description="Description 1" buttonText="Button 1" />
+        <Gridz imgSrc="darkwoodfinish.jpg" description="Description 2" buttonText="Button 2" />
+        <Gridz imgSrc="linensheets.jpg" description="Description 3" buttonText="Button 3" />
+        <Gridz imgSrc="mudroom.jpg" description="Description 4" buttonText="Button 4" />
       </div>
       <button>Learn More</button>
     </div>
