@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Form from "./Form";
 export default function CTA({ headlineone, headlinetwo, buttontext }) {
   const [isModalOpen, setModalOpen] = useState(false);
+    const modalContentRef = useRef(null);
+
   const handleOpenModal = (form) => {
     setModalOpen(true);
   };
+
   const handleCloseModal = () => {
     setModalOpen(false);
   };
+    const handleClickOutside = (event) => {
+    if (modalContentRef.current && !modalContentRef.current.contains(event.target)) {
+      handleCloseModal();
+    }
+  };
+
   return (
     <div className="bg-slate-100">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -26,11 +35,11 @@ export default function CTA({ headlineone, headlinetwo, buttontext }) {
               <span aria-hidden="true">→</span>
             </button>
             {isModalOpen && (
-              <div className="modal">
-                <span className="close" onClick={handleCloseModal}>
-                  &times;
-                </span>
-                <div className="modal-content">
+              <div className="modal" onClick={handleClickOutside}>
+                <div className="modal-content" ref={modalContentRef} onClick={(e) => e.stopPropagation()}>
+                  <span className="close" onClick={handleCloseModal}>
+                    &times;
+                  </span>
                   <Form />
                 </div>
               </div>
