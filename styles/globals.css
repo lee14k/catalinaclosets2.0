@@ -12,42 +12,40 @@
 .gallery__item {
   background-size: cover;
   background-position: center;
-  height:300px;
-  width:auto;
-
+  height: 300px;
+  width: auto;
 }
 
 .gallery__caption {
   text-shadow: 2px 2px 4px #000000;
 
-  color: white;  /* Assuming you want white text over images, adjust as needed */
+  color: white; /* Assuming you want white text over images, adjust as needed */
 }
 
 .homeheadwrapper {
-  background-image: url('/library.jpg');
-  height:750px;
-  width:100%;
-  background-size:cover;
+  background-image: url("/library.jpg");
+  height: 750px;
+  width: 100%;
+  background-size: cover;
 }
 
 .homeheadhead {
   text-shadow: 2px 2px 4px #000000;
-
 }
 
 .formwrapper {
   background-color: rgba(255, 255, 255, 1);
-  height:400px;
+  height: 400px;
 }
 .headbg {
-  height:100%;
-  background-size:cover;
+  height: 100%;
+  background-size: cover;
 }
 
 .mobile {
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .twoimoen {
@@ -66,122 +64,118 @@
 }
 
 .twophoto {
-  width:500px;
-  height:500px;
-  background-image: url('/library.jpg');
-  background-size:cover;
+  width: 500px;
+  height: 500px;
+  background-image: url("/library.jpg");
+  background-size: cover;
 }
 .currentimage {
-  width:500px;
-  height:auto;
+  width: 500px;
+  height: auto;
 }
 @media screen and (max-width: 1000px) {
-.homehead {
-  display:flex;
-  flex-direction:column;
+  .homehead {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); /* Creates 4 equal columns */
+    grid-gap: 20px;
+  }
+  .righttextcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .lefttextcontainer {
+    margin-bottom: 50px;
+  }
+
+  .iconcontainer {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 20px;
+    margin-left: 150px;
+    margin-right: 200px;
+  }
+
+  .conwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .contextwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    z-index: 10;
+  }
+
+  .navigation {
+    position: relative;
+  }
+
+  .hamburgwrap {
+    margin-left: 47%;
+  }
+
+  .navbar {
+    position: relative;
+    padding-top: 0px;
+  }
+
+  .leftphotoimg {
+    width: 100%;
+  }
+  .leftimgcontain {
+    width: 100%;
+  }
+
+  .spacepageheadwrap {
+    flex-direction: column;
+  }
+
+  .headspacewrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .headwrap {
+    display: grid;
+    grid-template-columns: 1fr; /* This makes it a single column */
+  }
+  .homeheadform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .headercontainer {
+  }
+  .gridfour {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
-
-.gallery {
-grid-template-columns: repeat(1, 1fr); /* Creates 4 equal columns */
-  grid-gap: 20px;
-}
-.righttextcontainer {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  margin-top:50px;
-}
-
-.lefttextcontainer {
-  margin-bottom:50px;
-}
-
-.iconcontainer {
-  grid-template-columns: repeat(1, 1fr) !important;
-  grid-gap: 20px;
-  margin-left:150px;
-    margin-right:200px;
-
-}
-
-.conwrap {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:0px;
-  position:relative;
-  z-index:10;
-}
-
-.contextwrap {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:0px;
-  z-index:10;
-  
-}
-
-.navigation {
-  position:relative;
-  
-  
-}
-
-.hamburgwrap {
- margin-left:47%;
-}
-
-.navbar {
-  position:relative;
-    padding-top:0px;
-
-}
-
-.leftphotoimg {
-width:100%;
-
-}
-.leftimgcontain {
-  width:100%;
-}
-
-.spacepageheadwrap {
-  flex-direction:column;
-}
-
-.headspacewrapper {
-  display:flex;
-  flex-direction:column;
-}
- .headwrap{
-        display: grid;
-        grid-template-columns: 1fr; /* This makes it a single column */
-    }
-    .homeheadform {
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      gap:0px;
-      position:relative;
-      z-index:10;
-    }
-
-    .headercontainer {
-    }
-
-}
-
 
 .stage {
-  display:flex;
-  height:500px;
-  width:500px;
-  background-size:cover;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  background-size: cover;
 }
 .modal {
   position: fixed; /* or absolute */
@@ -197,11 +191,11 @@ width:100%;
 
 .modal-content {
   margin: 5% 5%;
-  padding-top:200px;
+  padding-top: 200px;
   display: block;
-  height:100%;
-  width:75%;
-  z-index:200;
+  height: 100%;
+  width: 75%;
+  z-index: 200;
 }
 
 .close {
@@ -221,31 +215,27 @@ width:100%;
   cursor: pointer;
 }
 
-
 .closetcall {
-
 }
 
 .headtextshadow {
-    text-shadow: 2px 2px 4px #000000;
-
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .linequote {
-  background-color:black;
-  height:85%;
-  width:1px;
+  background-color: black;
+  height: 85%;
+  width: 1px;
 }
 
 .designslidertext {
-  
 }
 
 .grid-item {
   background-size: cover;
   background-position: center;
   height: 600px; /* Adjust as needed */
-  width:600px;
+  width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
