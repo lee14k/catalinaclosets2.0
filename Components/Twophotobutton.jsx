@@ -7,12 +7,14 @@ const Oooh = Oooh_Baby({
 });
 
 const Gridz = ({ imgSrc, description, buttonText }) => (
-  <div className="grid-item">
-    <img src={imgSrc} alt="description" className="homefourimage" />
-    <p>{description}</p>
-    <button>{buttonText}</button>
+  <div className="grid-item" style={{ backgroundImage: `url(${imgSrc})` }}>
+    <div className="overlay-content">
+      <p>{description}</p>
+      <button>{buttonText}</button>
+    </div>
   </div>
 );
+
 
 export default function Twophotobutton({ header }) {
   const [isVisible, setIsVisible] = useState(false);

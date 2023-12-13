@@ -241,8 +241,19 @@ width:100%;
   
 }
 
-.homefourimage {
-  height:300px;
-  width:300px;
-  background-size:cover;
+.grid-item {
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjust as needed */
+  width:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gridfour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
