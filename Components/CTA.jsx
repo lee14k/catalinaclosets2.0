@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Link from "next/link";
 import Form from "./Form";
 export default function CTA({ headlineone, headlinetwo, buttontext }) {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -27,16 +28,19 @@ export default function CTA({ headlineone, headlinetwo, buttontext }) {
           </h2>
 
           <div className="mt-10 flex items-center justify-center gap-x-6">
+            <Link href="/Consultation">
             <button
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-pink-800 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              onClick={() => handleOpenModal()}
+              
             >
               {buttontext}
               <span aria-hidden="true">→</span>
             </button>
+                          </Link>
+
             {isModalOpen && (
-              <div className="modal" onClick={handleClickOutside}>
-                <div className="modal-content" ref={modalContentRef} onClick={(e) => e.stopPropagation()}>
+              <div className="modal">
+                <div className="modal-content">
                   <span className="close" onClick={handleCloseModal}>
                     &times;
                   </span>
