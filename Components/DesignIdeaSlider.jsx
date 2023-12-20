@@ -56,12 +56,13 @@ export default function DesignIdeaSlider({ images, descriptions, header }) {
         </button>
 
         {/* Display the description corresponding to the current image */}
-        <div className="flex flex-col designslidertext">
-          <h1 className="text-2xl">{header[currentIdx]}</h1>
-          <p>{descriptions[currentIdx]}</p>
-        </div>
+        <div className=" flex flex-col pl-24">
+                  <h1 className="text-2xl mb-48">{header[currentIdx]}</h1>
+
+          <p className="">{descriptions[currentIdx]}</p>
       </div>
-      <div className="flex">
+      </div>
+      <div className="flex justify-center ">
         <img
           src={images[(currentIdx - 1 + images.length) % images.length]}
           alt={`Slide ${currentIdx - 1}`}

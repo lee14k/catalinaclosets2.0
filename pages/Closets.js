@@ -55,7 +55,7 @@ export default function Closets() {
         <Form />
         </div>
         </div>
-        <h1>Custom Closet Design Ideas</h1>
+        <h1 className="text-4xl py-16">Custom Closet Design Ideas</h1>
       <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>
