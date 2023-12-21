@@ -78,7 +78,8 @@ export default function Finishes() {
         </div>
         </div>
 
-        <div>
+        <div className="flex">
+          <img src="/tfl.png" />
           <h1>Materials</h1>
           <p>
             We specialize in usage of TFL, perfect for homes of all shapes and
