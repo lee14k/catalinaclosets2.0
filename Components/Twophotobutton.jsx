@@ -36,7 +36,6 @@ export default function Twophotobutton({ header }) {
         <Gridz imgSrc="linensheets.jpg" description="Description 3" buttonText="Button 3" />
         <Gridz imgSrc="mudroom.jpg" description="Description 4" buttonText="Button 4" />
       </div>
-      <button>Learn More</button>
     </div>
   );
 }
