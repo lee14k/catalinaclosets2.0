@@ -4,8 +4,8 @@ export default function Head ({head, caption, backgroundImageUrl}) {
     backgroundImage:`url(${backgroundImageUrl})`,
     }
     return (
-        <div className="w-full h-full pt-24 headercontainer  ">
-        <div className=" ">
+        <div className="w-full h-full headercontainer  ">
+        <div className=" pt-24 ">
             
 <div className="headbg  flex justify-center items-center mt-10 " style={style}>
          <div className=" grid grid-cols-2 headwrap">
@@ -13,7 +13,7 @@ export default function Head ({head, caption, backgroundImageUrl}) {
 <h1 className="text-6xl text-white headtextshadow">{head}</h1>
 <p className="text-4xl text-white mr-60 headtextshadow">{caption}</p>
 </div>
-<div className="headspacewrapper">
+<div className="headspacewrapper px-10 py-10">
                     <Form />
                 </div>
 </div>

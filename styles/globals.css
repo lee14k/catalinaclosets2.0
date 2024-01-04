@@ -36,6 +36,7 @@
 .formwrapper {
   background-color: rgba(255, 255, 255, 1);
   height: 400px;
+  width:400px;
 }
 .headbg {
   height: 100%;
