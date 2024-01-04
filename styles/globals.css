@@ -247,3 +247,26 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.swatchspace-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for the top images */
+  grid-template-rows: auto auto; /* 2 rows */
+  height: 600px; /* Example fixed height */
+  width: 500px;
+}
+
+.top-image, .bottom-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-image {
+  height: 80%; /* Top images take up half the height of the container */
+}
+
+.bottom-image {
+  grid-column: 1 / span 2; /* Bottom image spans both columns */
+  height: 80%; /* Bottom image takes up the remaining half */
+}
+

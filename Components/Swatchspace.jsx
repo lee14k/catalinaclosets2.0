@@ -1,43 +1,28 @@
-import Image from "next/image";
-
 export default function Swatchspace({
   header,
-  imageSrc,
-  imageSrcSpace,
-  imageAlt,
-  imageAltSpace,
-  imageHeight,
-  imageHeightSpace,
-  imageWidth,
-  imageWidthSpace,
+  topImage1Src,
+  topImage2Src,
+  bottomImageSrc,
 }) {
   return (
     <div>
       <h1>{header}</h1>
+      <div className="swatchspace-container">
+        {/* Top Images */}
+        <div 
+          className="top-image" 
+          style={{ backgroundImage: `url(${topImage1Src})` }}
+        />
+        <div 
+          className="top-image" 
+          style={{ backgroundImage: `url(${topImage2Src})` }}
+        />
 
-      <div className="grid grid-cols-2">
-        <div className="flex">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            width={imageWidth}
-            height={imageHeight}
-          />
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            width={imageWidth}
-            height={imageHeight}
-          />
-        </div>
-        <div className="col-span-2">
-          <Image
-            src={imageSrcSpace}
-            alt={imageAltSpace}
-            width={imageWidthSpace}
-            height={imageHeightSpace}
-          />
-        </div>
+        {/* Bottom Image */}
+        <div 
+          className="bottom-image" 
+          style={{ backgroundImage: `url(${bottomImageSrc})` }}
+        />
       </div>
     </div>
   );

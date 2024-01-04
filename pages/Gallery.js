@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-
+import Conbar from "@/Components/Conbar";
+import Footer from "@/Components/Footer";
+import Navbar from "@/Components/Navbar";
 const Gallery = () => {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -27,6 +29,8 @@ const Gallery = () => {
 
   return (
     <div>
+      <Conbar/>
+      <Navbar/>
       <h2>Gallery</h2>
       <div className="h-100 w-100 bg-red">
         {images.map((key) => (
@@ -38,6 +42,7 @@ const Gallery = () => {
           />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };
