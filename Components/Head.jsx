@@ -9,7 +9,7 @@ export default function Head ({head, caption, backgroundImageUrl}) {
             
 <div className="headbg  flex justify-center items-center mt-10 " style={style}>
          <div className=" grid grid-cols-2 headwrap">
-                <div className=" ">
+                <div className="flex justify-center flex-col ">
 <h1 className="text-6xl text-white headtextshadow">{head}</h1>
 <p className="text-4xl text-white mr-60 headtextshadow">{caption}</p>
 </div>

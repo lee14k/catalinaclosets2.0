@@ -48,6 +48,8 @@ export default function Finishes() {
         description="lovely mattes"
         images={matteImages}
       />
+            <div className="flex gap-10 justify-center items-center">
+
        <Swatchspace
           header="Powder Blue"
           topImage1Src="/allwhite.jpg"
@@ -60,11 +62,14 @@ export default function Finishes() {
           topImage2Src="/babybluetwo.jpg"
           bottomImageSrc="/babybluethree.jpg"
         />
+        </div>
       <Finishbox
         header="Linens and Specialities"
         description="lovely mattes"
         images={matteImages}
       />
+            <div className="flex gap-10 justify-center items-center">
+
        <Swatchspace
           header="Powder Blue"
           topImage1Src="/allwhite.jpg"
@@ -77,6 +82,7 @@ export default function Finishes() {
           topImage2Src="/babybluetwo.jpg"
           bottomImageSrc="/babybluethree.jpg"
         />
+        </div>
       <div>
         <div className="grid grid-cols-2 my-48">
           <div className="mx-24 ">
