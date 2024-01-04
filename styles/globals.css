@@ -203,7 +203,7 @@ box-shadow: 10px 10px 12px -1px rgba(138,0,67,0.8);
   /* Other styling as needed */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .homehead {
     display: flex;
     flex-direction: column;
