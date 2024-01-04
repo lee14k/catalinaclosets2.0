@@ -15,7 +15,7 @@ export default function Finishes() {
     { link: "/matteone.png", header: "Matte 1" },
   ];
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar />
       <Navbar />
       <Head

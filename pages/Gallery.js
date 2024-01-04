@@ -52,7 +52,7 @@ const Gallery = () => {
   }
 
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar />
       <Navbar />
       <h2>Gallery</h2>

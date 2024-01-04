@@ -5,9 +5,9 @@ import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
 import Contact from "@/Components/Contactform";
 
-export default function Accessories() {
+export default function Consultation() {
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar />
       <Navbar />
       <Contact/>

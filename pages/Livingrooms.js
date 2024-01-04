@@ -27,7 +27,7 @@ export default function Livingrooms() {
   'Description for the living room'
 ];
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar />
       <Navbar />
       <div className="spacepageheadwrap  flex ">

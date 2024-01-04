@@ -29,7 +29,7 @@ export default function Home() {
     { link: "/library.jpg", header: "Garage", page: '/Garage' },
   ];
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar phone="608-205-5000" email="info@catalinaclosets.com" />
       <Navbar />
       <Homehead />

@@ -36,7 +36,7 @@ export default function Closets() {
   'Description for the living room'
 ];
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar />
       <Navbar />
         <Head

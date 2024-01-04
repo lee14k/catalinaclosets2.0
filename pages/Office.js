@@ -25,7 +25,7 @@ export default function Office() {
   'Description for the living room'
 ];
   return (
-    <div>
+    <div className="mainbodywrapper">
       <Conbar />
       <Navbar />
      <div className="spacepageheadwrap  flex ">
