@@ -262,11 +262,11 @@
 }
 
 .top-image {
-  height: 80%; /* Top images take up half the height of the container */
+  height: 97%; /* Top images take up half the height of the container */
 }
 
 .bottom-image {
   grid-column: 1 / span 2; /* Bottom image spans both columns */
-  height: 80%; /* Bottom image takes up the remaining half */
+  height: 100%; /* Bottom image takes up the remaining half */
 }
 

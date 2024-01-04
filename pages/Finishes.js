@@ -32,9 +32,9 @@ export default function Finishes() {
       <div className="flex gap-10 justify-center items-center">
         <Swatchspace
           header="Powder Blue"
-          topImage1Src="/babyblueone.jpg"
-          topImage2Src="/babybluetwo.jpg"
-          bottomImageSrc="/babybluethree.jpg"
+          topImage1Src="/allwhite.jpg"
+          topImage2Src="/whitegameroom.jpg"
+          bottomImageSrc="/closets.jpg"
         />
         <Swatchspace
           header="Powder Blue"
@@ -48,11 +48,35 @@ export default function Finishes() {
         description="lovely mattes"
         images={matteImages}
       />
+       <Swatchspace
+          header="Powder Blue"
+          topImage1Src="/allwhite.jpg"
+          topImage2Src="/whitegameroom.jpg"
+          bottomImageSrc="/closets.jpg"
+        />
+        <Swatchspace
+          header="Powder Blue"
+          topImage1Src="/babyblueone.jpg"
+          topImage2Src="/babybluetwo.jpg"
+          bottomImageSrc="/babybluethree.jpg"
+        />
       <Finishbox
         header="Linens and Specialities"
         description="lovely mattes"
         images={matteImages}
       />
+       <Swatchspace
+          header="Powder Blue"
+          topImage1Src="/allwhite.jpg"
+          topImage2Src="/whitegameroom.jpg"
+          bottomImageSrc="/closets.jpg"
+        />
+        <Swatchspace
+          header="Powder Blue"
+          topImage1Src="/babyblueone.jpg"
+          topImage2Src="/babybluetwo.jpg"
+          bottomImageSrc="/babybluethree.jpg"
+        />
       <div>
         <div className="grid grid-cols-2 my-48">
           <div className="mx-24 ">
@@ -73,14 +97,22 @@ export default function Finishes() {
           </div>
         </div>
 
-        <div className="flex">
-          <img src="/tfl.png" />
+        <div className="grid grid-cols-2">
+          <div>
+          <Image
+          src="/Sunflower-1941.jpg"
+          width={400}
+          height={200}
+          />
+          </div>
+          <div>
           <h1>Materials</h1>
           <p>
             We specialize in usage of TFL, perfect for homes of all shapes and
             sizes, durable, resistant, and reliable
           </p>
           <button>Learn More</button>
+        </div>
         </div>
         <CTA
           headlineone="Get started with a free consultation"
