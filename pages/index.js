@@ -19,8 +19,8 @@ const Oooh = Oooh_Baby({
 });
 export default function Home() {
   const homeImages = [
-    { link: "/bedroom.jpg", header: "Bedroom", page: "/Bedrooms" },
-    { link: "/homeoffice.jpg", header: "Home Office", page: "/Office" },
+    { link: "/bedroom.jpg", header: "Closets", page: "/Bedrooms" },
+    { link: "/homeoffice.jpg", header: "Cabinetry", page: "/Office" },
   ];
   return (
     <div className="mainbodywrapper ">
