@@ -15,9 +15,9 @@ export default function Conbar({ phone, email }) {
 };
 
     return (
-        <div className="conwrap flex justify-between fixed bg-white w-full condrop z-10 border-solid border-b-4	">
+        <div className="flex justify-between fixed bg-white w-full condrop z-10 border-solid border-b-4	">
           
-            <div className="flex  gap-10 mb-10 contextwrap mx-10 ">
+            <div className="flex  gap-10 mb contextwrap mx-10 ">
                 <div className='mt-12 py-2'>{phone}</div>
                 <div className='mt-12 py-2'>{email}</div>
                 <div >

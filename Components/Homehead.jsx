@@ -16,9 +16,7 @@ export default function Homehead () {
                     </span>
                     <p className="text-2xl homeheadhead text-white"> We help customers find extra space in every room of their home - let's make magic together today</p>
                 </div>
-                <div className="homeheadform flex justify-center items-center w-100">
-                    <Form />
-                </div>
+               
             </div>
         </div>
     )

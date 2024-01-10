@@ -13,6 +13,7 @@ import Leftphoto from "@/Components/Leftphoto";
 import { Oooh_Baby } from "next/font/google";
 import Twophotobutton from "@/Components/Twophotobutton";
 import Iconbar from "@/Components/Iconbar";
+import NewNav from "@/Components/Newnav";
 const Oooh = Oooh_Baby({
   weight: "400",
   subsets: ["latin"],
@@ -29,10 +30,9 @@ export default function Home() {
     { link: "/library.jpg", header: "Garage", page: '/Garage' },
   ];
   return (
-    <div className="mainbodywrapper">
+    <div className="mainbodywrapper ">
       <Conbar phone="608-205-5000" email="info@catalinaclosets.com" />
-      <Navbar />
-      <Homehead />
+<NewNav/>      <Homehead />
       <span className="text-6xl flex justify-center my-10">
         <h1>Custom solutions for your entire home</h1>
       </span>
