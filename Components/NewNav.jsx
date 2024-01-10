@@ -1,22 +1,23 @@
 import { useState } from "react";
+import Link from "next/link";
 import { Disclosure,} from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/About", current: false },
   { name: "Contact", href: "/Contact", current: false },
   {
     name: "Closets",
     href: "#",
     current: false,
     children: [
-      { name: "Walk-In Closets", href: "#" },
-      { name: "Reach-In Closets", href: "#" },
+      { name: "Walk-In Closets", href: "/" },
+      { name: "Reach-In Closets", href: "/" },
     ],
   },
   {
     name: "Cabinetry",
-    href: "#",
+    href: "/",
     current: false,
     children: [
       { name: "Mudrooms", href: "#" },
@@ -27,8 +28,8 @@ const navigation = [
   
     ],
   },
-  { name: "Finishes", href: "#", current: false },
-  { name: "Gallery", href: "#", current: false },
+  { name: "Finishes", href: "/Finishes", current: false },
+  { name: "Gallery", href: "/Gallery", current: false },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -62,39 +63,33 @@ export default function NewNav() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <div key={item.name}>
-                        <a
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "rounded-md px-3 py-2 text-sm font-medium"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                          onClick={() => toggleDropdown(item.name)}
-                        >
-                          {item.name}
-                        </a>
+                         <Link href={item.href}>
+                <span
+                  className
+                  aria-current={item.current ? 'page' : undefined}
+                  onClick={() => item.children && toggleDropdown(item.name)}
+                >
+                  {item.name}
+                </span>
+              </Link>
                         {/* Render dropdown if item has children */}
-                        {item.children && activeDropdown === item.name && (
-                          <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                            <div className="py-1">
-                              {item.children.map((subItem) => (
-                                <a
-                                  key={subItem.name}
-                                  href={subItem.href}
-                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                >
-                                  {subItem.name}
-                                </a>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-                      </div>
+                         {item.children && activeDropdown === item.name && (
+                <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                  <div className="py-1">
+                    {item.children.map((subItem) => (
+                      <Link key={subItem.name} href={subItem.href}>
+                        <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          {subItem.name}
+                        </span>
+                      </Link>
                     ))}
                   </div>
                 </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
               </div>
             </div>
           </div>
