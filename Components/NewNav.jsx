@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#", current: false },
@@ -13,7 +12,6 @@ const navigation = [
     children: [
       { name: "Walk-In Closets", href: "#" },
       { name: "Reach-In Closets", href: "#" },
-      // ... other subcategories
     ],
   },
   {
