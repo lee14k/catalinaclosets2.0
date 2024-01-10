@@ -6,7 +6,6 @@ import Homehead from "@/Components/Homehead";
 import Imagegrid from "@/Components/Imagegrid";
 import CTA from "@/Components/CTA";
 import Footer from "@/Components/Footer";
-import Rightphoto from "@/Components/Rightphoto";
 import Conbar from "@/Components/Conbar";
 import Leftphoto from "@/Components/Leftphoto";
 import { Oooh_Baby } from "next/font/google";
@@ -31,14 +30,7 @@ export default function Home() {
         <h1>Custom solutions for your entire home</h1>
       </span>
       <Imagegrid images={homeImages} />
-      <Rightphoto
-        heading="Your Heading Here"
-        description="Your description here."
-        imageSrc="/homeoffice.jpg"
-        imageAlt="Description of the image"
-        imageWidth={600}
-        imageHeight={900}
-      />
+     
 
      
       <Leftphoto
@@ -46,7 +38,7 @@ export default function Home() {
         description="Your description here."
         imageSrc="/finish.jpg"
         imageAlt="Description of the image"
-        imageWidth={600}
+        imageWidth={'full'}
         imageHeight={500}
       />
       <Twophotobutton header="Customize your Space" />

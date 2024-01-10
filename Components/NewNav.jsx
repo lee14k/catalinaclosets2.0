@@ -11,8 +11,8 @@ const navigation = [
     href: "#",
     current: false,
     children: [
-      { name: "Walk-In Closets", href: "/" },
-      { name: "Reach-In Closets", href: "/" },
+      { name: "Walk-In Closets", href: "/WalkIn" },
+      { name: "Reach-In Closets", href: "/ReachIn" },
     ],
   },
   {
@@ -20,11 +20,11 @@ const navigation = [
     href: "/",
     current: false,
     children: [
-      { name: "Mudrooms", href: "#" },
-      { name: "Laundry", href: "#" },
-      { name: "Pantry & Kitchen", href: "#" },
-      { name: "Office", href: "#" },
-      { name: "Garage", href: "#" },
+      { name: "Mudrooms", href: "/Mudrooms" },
+      { name: "Laundry", href: "Laundry" },
+      { name: "Pantry & Kitchen", href: "Kitchen" },
+      { name: "Office", href: "Office" },
+      { name: "Garage", href: "Garage" },
   
     ],
   },
@@ -60,7 +60,7 @@ export default function NewNav() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 text-white">
                     {navigation.map((item) => (
                       <div key={item.name}>
                          <Link href={item.href}>
@@ -78,7 +78,7 @@ export default function NewNav() {
                   <div className="py-1">
                     {item.children.map((subItem) => (
                       <Link key={subItem.name} href={subItem.href}>
-                        <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        <span className="block px-4 py-2 text-sm text-white hover:bg-gray-100">
                           {subItem.name}
                         </span>
                       </Link>

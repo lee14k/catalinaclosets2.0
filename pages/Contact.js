@@ -6,7 +6,7 @@ import ContactForm from "@/Components/Contactform";
 import NewNav from "@/Components/NewNav";
 export default function Contact() {
   return (
-    <div className="mainbodywrapper">
+    <div className="">
       <Conbar />
       <NewNav />
   <div>
