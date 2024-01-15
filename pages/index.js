@@ -38,7 +38,7 @@ export default function Home() {
         description="Your description here."
         imageSrc="/finish.jpg"
         imageAlt="Description of the image"
-        imageWidth={'full'}
+        imageWidth={1000}
         imageHeight={500}
       />
       <Twophotobutton header="Customize your Space" />
