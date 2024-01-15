@@ -6,6 +6,7 @@ import DesignIdeaSlider from '../Components/DesignIdeaSlider';
 import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
 import Spaceform from "@/Components/Spaceform";
+import NewNav from "@/Components/NewNav";
 export default function Closets() {
 
 
@@ -29,7 +30,7 @@ export default function Closets() {
   return (
     <div className="mainbodywrapper">
       <Conbar />
-      <Navbar />
+      <NewNav />  
         <Head
           head="Bedrooms"
           caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
