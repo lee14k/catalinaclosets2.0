@@ -37,7 +37,7 @@ export default function Home() {
       
       </div>
       <Imagegrid images={homeImages} />
-     
+
 
      
       <Leftphoto
@@ -49,7 +49,6 @@ export default function Home() {
         imageHeight={500}
       />
       <Twophotobutton header="Customize your Space" />
-      <Iconbar />
       <Footer />
     </div>
   );

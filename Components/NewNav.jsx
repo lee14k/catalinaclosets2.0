@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Disclosure,} from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from "next/image"; 
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "/About", current: false },
@@ -42,9 +43,17 @@ export default function NewNav() {
   };
   return (
     <Disclosure as="nav" className="pt-24 ">
+      
       {({ open }) => (
         <>
-          <div className="flex justify-center">
+       
+          <div className="flex justify-center pt-12">
+          <Image
+      src="/cclogo.png"
+      width={200}
+      height={200}
+     className="mr-12 mb-12"
+      />
             <div className="flex h-16 justify-center">
               <div className="absolute inset-y-0 left-0 flex sm:hidden">
                 {/* Mobile menu button*/}

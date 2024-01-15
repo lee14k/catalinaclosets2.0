@@ -26,7 +26,7 @@ export default function Twophotobutton({ header }) {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col gap-10 mt-20">
+    <div className="flex justify-center items-center flex-col gap-10 mt-48">
       <div className="text-6xl">
         <h1 className={Oooh.className}>{header}</h1>
       </div>
