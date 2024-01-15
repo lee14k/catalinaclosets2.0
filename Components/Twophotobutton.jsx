@@ -26,21 +26,22 @@ const Gridz = ({ id, imgSrc, description, buttonText, onClick }) => (
 );
 
 const DetailedView = ({ item, onClose }) => {
-  // Assigning a specific class for "Description 2"
-  const detailClass = item.description === 'Description 2' ? 'detailed-view-special' : 'detailed-view';
-
   return (
     <motion.div 
       layoutId={`item-${item.id}`} 
-      className={detailClass}
+      className="modal-backdrop"
       initial="hidden"
       animate="visible"
       exit="hidden"
       variants={detailedViewVariants}
+      onClick={onClose} // Clicking on the backdrop closes the modal
     >
-      <h2>{item.description}</h2>
-      <p>More detailed information about {item.description}...</p>
-      <button onClick={onClose}>Close</button>
+      <motion.div className="modal-content" onClick={e => e.stopPropagation()}>
+        {/* Prevents modal from closing when clicking inside the content */}
+        <h2>{item.description}</h2>
+        <p>More detailed information about {item.description}...</p>
+        <button onClick={onClose}>Close</button>
+      </motion.div>
     </motion.div>
   );
 };
