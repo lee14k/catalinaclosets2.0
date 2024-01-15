@@ -5,6 +5,8 @@ import Footer from "@/Components/Footer";
 import DesignIdeaSlider from '../Components/DesignIdeaSlider';
 import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
+import NewNav from "@/Components/NewNav";
+
 export default function Laundry() {
 
 
@@ -28,7 +30,7 @@ export default function Laundry() {
   return (
     <div className="mainbodywrapper">
       <Conbar />
-      <Navbar />
+      <NewNav />
       <div className="spacepageheadwrap  flex ">
         <Head
           head="Laundry"

@@ -3,6 +3,8 @@ import Imagegrid from "@/Components/Imagegrid";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
 import DesignIdeaSlider from '../Components/DesignIdeaSlider';
+import NewNav from "@/Components/NewNav";
+
 import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
 export default function Livingrooms() {
@@ -28,7 +30,7 @@ export default function Livingrooms() {
   return (
     <div className="mainbodywrapper">
       <Conbar />
-      <Navbar />
+      <NewNav />
       <div className="spacepageheadwrap  flex ">
         <Head
           head="Living Rooms"

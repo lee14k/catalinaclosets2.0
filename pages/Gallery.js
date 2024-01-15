@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
+import NewNav from "@/Components/NewNav";
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
@@ -53,7 +54,7 @@ const Gallery = () => {
   return (
     <div className="mainbodywrapper">
       <Conbar />
-      <Navbar />
+      <NewNav />
       <h2>Gallery</h2>
       <div className="h-100 w-100 bg-red">
         <div className="imgcontainer">
