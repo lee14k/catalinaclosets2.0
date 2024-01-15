@@ -1,5 +1,5 @@
 import Head from "@/Components/Head";
-import Navbar from "@/Components/Navbar";
+import NewNav from "@/Components/NewNav";
 import Imagegrid from "@/Components/Imagegrid";
 import Finishbox from "@/Components/Finishbox";
 import Footer from "@/Components/Footer";
@@ -17,7 +17,7 @@ export default function Finishes() {
   return (
     <div className="mainbodywrapper">
       <Conbar />
-      <Navbar />
+      <NewNav />
       <Head
         head="Finishes"
         caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"

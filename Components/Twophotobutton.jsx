@@ -1,26 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import { Oooh_Baby } from "next/font/google";
-import { motion, useViewportScroll, useTransform, AnimatePresence} from "framer-motion";
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
 
+const gridItemVariants = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1 },
+};
 
-const Oooh = Oooh_Baby({
-  weight: "400",
-  subsets: ["latin"],
-});
+const detailedViewVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 const Gridz = ({ id, imgSrc, description, buttonText, onClick }) => (
-  <motion.div layoutId={id} className="grid-item" style={{ backgroundImage: `url(${imgSrc})` }} onClick={() => onClick(id)}>
-    <div className="gradient-overlay"></div>
-    <div className="overlay-content">
-      <motion.p className="text-2xl text-white">{description}</motion.p>
-      <button>{buttonText}</button>
-    </div>
+  <motion.div 
+    layoutId={`item-${id}`} 
+    onClick={() => onClick(id)}
+    initial="hidden"
+    animate="visible"
+    variants={gridItemVariants}
+    className="grid-item" 
+    style={{ backgroundImage: `url(${imgSrc})` }}
+  >
   </motion.div>
 );
 
 const DetailedView = ({ item, onClose }) => {
   return (
-    <motion.div layoutId={item.id} className="detailed-view">
+    <motion.div 
+      layoutId={`item-${item.id}`} 
+      className="detailed-view"
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      variants={detailedViewVariants}
+    >
       <h2>{item.description}</h2>
       <p>More detailed information about {item.description}...</p>
       <button onClick={onClose}>Close</button>
@@ -28,23 +41,18 @@ const DetailedView = ({ item, onClose }) => {
   );
 };
 
-// Style your .detailed-view in CSS to make it look like an expanded card
-
-
-
 export default function Twophotobutton({ header }) {
   const [selectedId, setSelectedId] = useState(null);
-
   const items = [
-    { id: '1', imgSrc: 'accessorydrawers.jpg', description: 'Description 1', buttonText: 'Button 1' },
-    { id: '2', imgSrc: 'accessorydrawers.jpg', description: 'Description 2', buttonText: 'Button 2' },
+    { id: '1', imgSrc: '/accessorydrawers.jpg', description: 'Description 1', buttonText: 'Button 1' },
+    { id: '2', imgSrc: '/accessorydrawers.jpg', description: 'Description 2', buttonText: 'Button 2' },
     // ... other items
   ];
 
   const selectedItem = items.find(item => item.id === selectedId);
 
   return (
-    <div className="flex justify-center items-center flex-col gap-10 mt-48">
+    <div className="container">
       <div className="text-6xl">
         <h1>{header}</h1>
       </div>

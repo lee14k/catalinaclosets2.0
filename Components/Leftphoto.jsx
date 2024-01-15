@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Navbar from './Navbar';
 import { useEffect, useRef } from 'react';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 

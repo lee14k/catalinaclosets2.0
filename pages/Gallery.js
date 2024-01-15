@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
