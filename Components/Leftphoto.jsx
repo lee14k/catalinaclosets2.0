@@ -7,7 +7,7 @@ export default function Leftphoto({ heading, description, imageSrc, imageAlt, im
     const scrollRef = useRef(null)
     const { scrollYProgress } = useViewportScroll();
     const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]); // Adjust these numbers as needed
+    const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
     return (
         <div className="flex flex-col above-xs:flex-row justify-between my-12" >
@@ -15,7 +15,7 @@ export default function Leftphoto({ heading, description, imageSrc, imageAlt, im
                 <div className='leftphotocontainer'>
                     <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
                     <motion.div
-                        className="overlay"
+                        className="text-overlay"
                         style={{ opacity }}
                     >
                         <h2>{heading}</h2>

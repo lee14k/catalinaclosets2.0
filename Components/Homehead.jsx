@@ -8,16 +8,15 @@ const Oooh = Oooh_Baby({
 
 export default function Homehead () {
     return (
-        <div className="homeheadwrapper flex justify-center items-center mt-10">
-            <div className="homehead grid grid-cols-2">
-                <div className="homeheadtext mx-20 flex justify-center items-center flex-col">
-                    <span className="text-8xl text-white homeheadhead">
-                    <h1 className={Oooh.className}>Custom Creations</h1>
-                    </span>
-                    <p className="text-2xl homeheadhead text-white"> We help customers find extra space in every room of their home - let's make magic together today</p>
-                </div>
+        <div className="homeheadwrapper relative">
+            <div className=" ">
                
             </div>
+            <div class="custom-shape-divider-bottom-1705308503">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+    </svg>
+</div>
         </div>
     )
 }

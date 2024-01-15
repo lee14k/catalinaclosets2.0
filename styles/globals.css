@@ -4,7 +4,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  grid-template-columns: repeat(2, 1fr); /* Creates 4 equal columns */
   grid-gap: 20px; /* space between images */
 }
 
@@ -25,7 +25,6 @@
 .homeheadwrapper {
   background-image: url("/library.jpg");
   height: 750px;
-  width: 100%;
   background-size: cover;
 }
 
@@ -345,10 +344,34 @@ box-shadow: 10px 10px 12px -1px rgba(138,0,67,0.8);
   position: relative;
 }
 
-.overlay {
+.leftphotocontainer {
+  position: relative;
+}
+
+.text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* Add more styling as needed */
+}
+.custom-shape-divider-bottom-1705308503 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1705308503 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 171px;
+}
+
+.custom-shape-divider-bottom-1705308503 .shape-fill {
+  fill: #FFFFFF;
 }

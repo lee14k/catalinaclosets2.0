@@ -15,13 +15,13 @@ export default function Conbar({ phone, email }) {
 };
 
     return (
-        <div className="flex justify-between fixed bg-white w-full condrop z-10 border-solid border-b-4	">
+        <div className="flex justify-end fixed bg-white w-full condrop z-10 border-solid border-b-4	">
           
             <div className="flex  gap-10 mb contextwrap mx-10 ">
-                <div className='mt-12 py-2'>{phone}</div>
-                <div className='mt-12 py-2'>{email}</div>
+                <div className='mt-2'>{phone}</div>
+                <div className='mt-2'>{email}</div>
                 <div >
-                    <button className="rounded-md font-semibold bg-pink-800 shadow-sm mt-12 text-white px-4 py-2" onClick={formPop}>
+                    <button className="rounded-md font-semibold bg-pink-800 shadow-sm text-white px-4 py-2" onClick={formPop}>
                         Request Consultation
                     </button>
                     {view === "Dropdownconsult" && <Dropdownconsult />}
