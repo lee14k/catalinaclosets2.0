@@ -341,4 +341,14 @@ box-shadow: 10px 10px 12px -1px rgba(138,0,67,0.8);
   background-size:cover;
   background-position: center;
 }
+.leftphotocontainer {
+  position: relative;
+}
 
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add more styling as needed */
+}

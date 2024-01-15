@@ -11,7 +11,7 @@ import Leftphoto from "@/Components/Leftphoto";
 import { Oooh_Baby } from "next/font/google";
 import Twophotobutton from "@/Components/Twophotobutton";
 import Iconbar from "@/Components/Iconbar";
-import NewNav from "@/Components/Newnav";
+import NewNav from "@/Components/NewNav";
 const Oooh = Oooh_Baby({
   weight: "400",
   subsets: ["latin"],
