@@ -21,14 +21,18 @@ const Gridz = ({ id, imgSrc, description, buttonText, onClick }) => (
     className="grid-item" 
     style={{ backgroundImage: `url(${imgSrc})` }}
   >
+    {/* Grid item content */}
   </motion.div>
 );
 
 const DetailedView = ({ item, onClose }) => {
+  // Assigning a specific class for "Description 2"
+  const detailClass = item.description === 'Description 2' ? 'detailed-view-special' : 'detailed-view';
+
   return (
     <motion.div 
       layoutId={`item-${item.id}`} 
-      className="detailed-view"
+      className={detailClass}
       initial="hidden"
       animate="visible"
       exit="hidden"
@@ -52,7 +56,7 @@ export default function Twophotobutton({ header }) {
   const selectedItem = items.find(item => item.id === selectedId);
 
   return (
-    <div className="container mt-24">
+    <div className="container mt-48">
       <div className="text-6xl">
         <h1>{header}</h1>
       </div>

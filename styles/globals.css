@@ -375,11 +375,29 @@ box-shadow: 10px 10px 12px -1px rgba(138,0,67,0.8);
   z-index: 1;
   /* other styles */
 }
+.detailed-view, .detailed-view-special {
+  position: absolute;
+  top: 500px; /* Adjust as needed for larger screens */
+  left: 25px; /* Adjust as needed for larger screens */
+  z-index: 2;
+  /* Other common styles for size, background, etc. */
+}
 
-.detailed-view {
-  position: absolute; /* or fixed, depending on your layout */
-  top: 500px; /* adjust as needed */
-  left: 25px; /* adjust as needed */
-  z-index: 2; /* higher than grid-item */
-  /* other styles for size, background, etc. */
+.detailed-view-special {
+  left: 700px; /* Only for larger screens */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .detailed-view, .detailed-view-special {
+    position: relative; /* Or absolute with different positioning */
+    top: 0; /* Reset top positioning for mobile */
+    left: 0; /* Reset left positioning for mobile */
+    width: 100%; /* Full width on mobile */
+    /* Adjust height, padding, margins, etc., as needed */
+  }
+
+  .detailed-view-special {
+    /* Additional specific styles for detailed-view-special on mobile, if needed */
+  }
 }
