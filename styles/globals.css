@@ -334,19 +334,9 @@ box-shadow: 10px 10px 12px -1px rgba(138,0,67,0.8);
 }
 
 .leftphotocontainer {
-  background-image:url('/laundryroom.jpg');
-  height:600px;
-  width:100%;
-  background-size:cover;
-  background-position: center;
-}
-.leftphotocontainer {
   position: relative;
 }
 
-.leftphotocontainer {
-  position: relative;
-}
 
 .text-overlay {
   position: absolute;

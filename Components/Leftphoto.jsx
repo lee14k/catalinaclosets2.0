@@ -6,7 +6,7 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 export default function Leftphoto({ heading, description, imageSrc, imageAlt, imageWidth, imageHeight }) {
     const scrollRef = useRef(null)
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1.5]);
     const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
     return (
