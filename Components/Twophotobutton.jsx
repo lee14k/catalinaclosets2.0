@@ -52,7 +52,7 @@ export default function Twophotobutton({ header }) {
   const selectedItem = items.find(item => item.id === selectedId);
 
   return (
-    <div className="container">
+    <div className="container mt-24">
       <div className="text-6xl">
         <h1>{header}</h1>
       </div>
