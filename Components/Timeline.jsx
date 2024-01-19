@@ -1,20 +1,27 @@
 import { CheckIcon } from '@heroicons/react/24/solid'
+import { useState } from 'react'
 
 const steps = [
-  { id: '01', name: 'Book a Consultation', href: '#', status: 'complete' },
-  { id: '02', name: 'Design your closet', href: '#', status: 'current' },
-  { id: '03', name: 'Book installation', href: '#', status: 'upcoming' },
-  { id: '04', name: 'Enjoy your new space', href: '#', status: 'upcoming' },
+  { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.'
+},
+  { id: '02', name: 'Design your closet', status: 'upcoming',     description: 'Your closet design is being prepared.'
+},
+  { id: '03', name: 'Book installation',  status: 'upcoming',    description: 'Your closet design is being prepared.'
+},
+  { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Your closet design is being prepared.'
+},
 
 ]
 
 export default function Timeline() {
+    const [currentStep, setCurrentStep] = useState(0);
+
   return (
-       
+       <div>
     <nav aria-label="Progress">
       <ol role="list" className="divide-y divide-gray-300 rounded-md border border-gray-300 md:flex md:divide-y-0">
         {steps.map((step, stepIdx) => (
-          <li key={step.name} className="relative md:flex md:flex-1">
+            <li key={step.name} className="relative md:flex md:flex-1" onClick={() => setCurrentStep(stepIdx)}>
             {step.status === 'complete' ? (
               <a href={step.href} className="group flex w-full items-center">
                 <span className="flex items-center px-6 py-4 text-sm font-medium">
@@ -65,6 +72,13 @@ export default function Timeline() {
           </li>
         ))}
       </ol>
+      
     </nav>
+    <div className="step-content my-24">
+        <img src={steps[currentStep].image} alt={steps[currentStep].title} />
+        <h2>{steps[currentStep].title}</h2>
+        <p>{steps[currentStep].description}</p>
+      </div>
+    </div>
   )
 }
