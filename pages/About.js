@@ -1,11 +1,14 @@
 import Timeline from "@/Components/Timeline";
 import NewNav from "@/Components/NewNav";
 import Image from "next/image";
+import HorizontalSlider from "@/Components/HorizontalSlider";
 const About = () => {
     return (
         <div>
             <NewNav />
-            <div className="grid grid-cols-2 ml-10">
+            <HorizontalSlider/>
+
+            <div className="grid grid-cols-2 ml-10  mt-24">
                 <Image
                     src="/aboutpic.jpg"
                     height={500}

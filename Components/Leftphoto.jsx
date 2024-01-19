@@ -17,7 +17,7 @@ export default function Leftphoto({ heading, description, imageSrc, imageAlt, im
                         className="text-overlay"
                         style={{ opacity }}
                     >
-                        <h2>{heading}</h2>
+                        <h2 className="text-white text-6xl homeheadhead">{heading}</h2>
                         <p>{description}</p>
                     </motion.div>
                 </div>

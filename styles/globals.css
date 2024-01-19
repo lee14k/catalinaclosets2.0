@@ -330,7 +330,10 @@
 
 .leftphotocontainer {
   position: relative;
-}
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  overflow: hidden; /* Ensures the frame doesn't get cut off */
+  box-shadow: inset 0 0 0 20px #fff; /* Inset white frame, adjust the color and size as needed */
+  border: 5px solid black;}
 
 
 .text-overlay {
@@ -486,4 +489,45 @@ z-index: 1001; / Above the backdrop */
   position: absolute;
   /* Other styles... */
   z-index: 2; /* Ensure the text is above the gradient */
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  animation: slide 30s linear infinite; /* Adjust time as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%); /* Adjust to the width of one less image */
+  }
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Adjust text color as needed */
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0)); /* Adjust gradient */
+  pointer-events: none; /* Allows clicks to pass through */
 }
