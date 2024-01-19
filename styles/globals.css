@@ -372,7 +372,7 @@ box-shadow: 10px 10px 12px -1px rgba(138,0,67,0.8);
 
 .grid-item {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   /* other styles */
 }
 .detailed-view, .detailed-view-special {
@@ -421,6 +421,7 @@ background: white;
 padding: 20px;
 border-radius: 5px;
 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+z-index:100;
 /* Size of the modal, adjust as needed /
 width: 90%;
 max-width: 500px;
