@@ -58,10 +58,10 @@ export default function Twophotobutton({ header }) {
 
   return (
     <div className="container mt-48">
-      <div className="text-6xl">
+      <div className="text-6xl flex justify-center items-center">
         <h1>{header}</h1>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-64 justify-center items-center">
         {items.map(item => (
           <Gridz key={item.id} {...item} onClick={setSelectedId} />
         ))}
