@@ -18,8 +18,8 @@ const Oooh = Oooh_Baby({
 });
 export default function Home() {
   const homeImages = [
-    { link: "/bedroom.jpg", header: "Closets", page: "/Bedrooms" },
-    { link: "/homeoffice.jpg", header: "Cabinetry", page: "/Office" },
+    { link: "/allwhite.jpg", header: "Closets", page: "/Closets" },
+    { link: "/babyblueone.jpg", header: "Cabinetry", page: "/Cabinetry" },
   ];
   return (
     <div className="mainbodywrapper ">
@@ -41,9 +41,9 @@ export default function Home() {
 
      
       <Leftphoto
-        heading="Your Heading Here"
+        heading="Simplify your Life"
         description="Your description here."
-        imageSrc="/finish.jpg"
+        imageSrc="/allwhite.jpg"
         imageAlt="Description of the image"
         imageWidth={1000}
         imageHeight={500}

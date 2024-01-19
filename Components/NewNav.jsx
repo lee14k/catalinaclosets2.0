@@ -42,7 +42,7 @@ export default function NewNav() {
     setActiveDropdown(activeDropdown === itemName ? null : itemName);
   };
   return (
-    <Disclosure as="nav" className="pt-24 ">
+    <Disclosure as="nav" className="pt-12 ">
       
       {({ open }) => (
         <>

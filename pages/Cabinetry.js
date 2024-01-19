@@ -6,7 +6,7 @@ import DesignIdeaSlider from '../Components/DesignIdeaSlider';
 import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
 import NewNav from "@/Components/NewNav";
-export default function Closets() {
+export default function Cabinetry() {
 
   const accImages = [
     { link: "/bedroom.jpg", header: "Bedroom" },

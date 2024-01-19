@@ -513,7 +513,7 @@ z-index: 1001; / Above the backdrop */
 }
 
 
-img {
+.slideimg {
   width: 100%;
   height: auto;
 }
