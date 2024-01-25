@@ -325,7 +325,8 @@
 .modal-content {
     margin: 15% auto;
     display: block;
-    width: auto;
+    width: 25%;
+  height:50%;    
 }
 
 .leftphotocontainer {

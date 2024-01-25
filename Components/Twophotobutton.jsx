@@ -11,7 +11,7 @@ const detailedViewVariants = {
   visible: { opacity: 1 },
 };
 
-const Gridz = ({ id, imgSrc, description, buttonText, onClick }) => (
+const Gridz = ({ id, imgSrc, description, buttonText, onClick, headerText }) => (
   <motion.div 
     layoutId={`item-${id}`} 
     onClick={() => onClick(id)}
@@ -21,7 +21,7 @@ const Gridz = ({ id, imgSrc, description, buttonText, onClick }) => (
     className="grid-item" 
     style={{ backgroundImage: `url(${imgSrc})` }}
   >
-    {/* Grid item content */}
+    <h2 className="text-2xl text-white">{headerText}</h2>
   </motion.div>
 );
 
@@ -49,8 +49,8 @@ const DetailedView = ({ item, onClose }) => {
 export default function Twophotobutton({ header }) {
   const [selectedId, setSelectedId] = useState(null);
   const items = [
-    { id: '1', imgSrc: '/accessorydrawers.jpg', description: 'Description 1', buttonText: 'Button 1' },
-    { id: '2', imgSrc: '/accessorydrawers.jpg', description: 'Description 2', buttonText: 'Button 2' },
+    { id: '1', imgSrc: '/accessorydrawers.jpg', description: 'our finish options', buttonText: 'Button 1' },
+    { id: '2', imgSrc: '/library.jpg', description: 'fun projects', buttonText: 'Button 2' },
     // ... other items
   ];
 
@@ -63,7 +63,12 @@ export default function Twophotobutton({ header }) {
       </div>
       <div className="grid grid-cols-2 gap-64 justify-center items-center">
         {items.map(item => (
-          <Gridz key={item.id} {...item} onClick={setSelectedId} />
+          <Gridz 
+            key={item.id} 
+            {...item} 
+            onClick={setSelectedId} 
+            headerText={`Click here to learn more about ${item.description}`} // Custom header text
+          />
         ))}
       </div>
 

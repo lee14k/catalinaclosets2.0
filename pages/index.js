@@ -42,7 +42,7 @@ export default function Home() {
      
       <Leftphoto
         heading="Simplify your Life"
-        description="Your description here."
+        description="Learn more about our custom solutions"
         imageSrc="/allwhite.jpg"
         imageAlt="Description of the image"
         imageWidth={1000}

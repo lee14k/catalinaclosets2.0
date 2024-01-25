@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import Link from 'next/link';
 
 export default function Leftphoto({ heading, description, imageSrc, imageAlt, imageWidth, imageHeight }) {
     const scrollRef = useRef(null)
@@ -18,7 +19,9 @@ export default function Leftphoto({ heading, description, imageSrc, imageAlt, im
                         style={{ opacity }}
                     >
                         <h2 className="text-white text-6xl homeheadhead">{heading}</h2>
-                        <button className="mt-5 bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm border-solid border-white border-2 w-9/12">{description}</button>
+                        <Link href="/Closets">
+                        <button className="ml-12 mt-5 bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm border-solid border-white border-2 w-9/12">{description}</button>
+                        </Link>
                     </motion.div>
                 </div>
             </motion.div>
