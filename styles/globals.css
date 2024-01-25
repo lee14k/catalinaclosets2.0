@@ -334,7 +334,7 @@
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
   overflow: hidden; /* Ensures the frame doesn't get cut off */
   box-shadow: inset 0 0 0 20px #fff; /* Inset white frame, adjust the color and size as needed */
-  border: 5px solid black;}
+}
 
 
 .text-overlay {
