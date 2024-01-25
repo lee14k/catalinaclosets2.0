@@ -21,10 +21,10 @@ const Gridz = ({ id, imgSrc, description, buttonText, onClick, headerText }) => 
     className="grid-item" 
     style={{ backgroundImage: `url(${imgSrc})` }}
   >
-    <h2 className="text-2xl text-white">{headerText}</h2>
+    <h2 className="text-white text-2xl" style={{ position: 'relative', zIndex: 2 }}>{headerText}</h2>
+    {/* Ensure any other content here also has a higher z-index if needed */}
   </motion.div>
 );
-
 const DetailedView = ({ item, onClose }) => {
   return (
     <motion.div 
@@ -38,7 +38,7 @@ const DetailedView = ({ item, onClose }) => {
     >
       <motion.div className="modal-content" onClick={e => e.stopPropagation()}>
         {/* Prevents modal from closing when clicking inside the content */}
-        <h2>{item.description}</h2>
+        <h2 className="text-white text-2xl">{item.description}</h2>
         <p>More detailed information about {item.description}...</p>
         <button onClick={onClose}>Close</button>
       </motion.div>
