@@ -1,27 +1,36 @@
 import { CheckIcon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
 
-const steps = [
-  { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.'
-},
-  { id: '02', name: 'Design your closet', status: 'upcoming',     description: 'Your closet design is being prepared.'
-},
-  { id: '03', name: 'Book installation',  status: 'upcoming',    description: 'Your closet design is being prepared.'
-},
-  { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Your closet design is being prepared.'
-},
-
-]
 
 export default function Timeline() {
     const [currentStep, setCurrentStep] = useState(0);
+    const [steps, setSteps] = useState([
 
+      { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.', isActive: false 
+    },
+      { id: '02', name: 'Design your closet', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false
+    },
+      { id: '03', name: 'Book installation',  status: 'upcoming',    description: 'Your closet design is being prepared.', isActive: false
+    },
+      { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false
+    },
+    
+    ])
+    
+    const handleStepClick = (stepIdx) => {
+      setCurrentStep(stepIdx);
+      const updatedSteps = steps.map((step, index) => ({
+        ...step,
+        isActive: index === stepIdx,
+      }));
+      setSteps(updatedSteps); // Assuming you add a useState for steps
+    };
   return (
        <div>
     <nav aria-label="Progress">
       <ol role="list" className="divide-y divide-gray-300 rounded-md border border-gray-300 md:flex md:divide-y-0">
         {steps.map((step, stepIdx) => (
-            <li key={step.name} className="relative md:flex md:flex-1" onClick={() => setCurrentStep(stepIdx)}>
+            <li key={step.name}  className={`relative md:flex md:flex-1 ${step.isActive ? 'bg-red-800' : ''}`}  onClick={() => handleStepClick(stepIdx)}>
             {step.status === 'complete' ? (
               <a href={step.href} className="group flex w-full items-center">
                 <span className="flex items-center px-6 py-4 text-sm font-medium">
