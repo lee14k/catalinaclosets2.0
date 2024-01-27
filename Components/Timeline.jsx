@@ -6,7 +6,7 @@ export default function Timeline() {
     const [currentStep, setCurrentStep] = useState(0);
     const [steps, setSteps] = useState([
 
-      { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.', isActive: false 
+      { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.', isActive: true 
     },
       { id: '02', name: 'Design your closet', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false
     },
