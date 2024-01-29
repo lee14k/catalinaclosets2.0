@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HorizontalSlider = () => {
+const HorizontalSlider = ({header}) => {
   return (
     <div className='sliderContainer'>
       <div className='slider'>
@@ -19,8 +19,7 @@ const HorizontalSlider = () => {
         <img src="/hamper.jpg" className="slideimage" alt="Image 5" />      
         </div>
       <div className='textOverlay text-8xl'>
-About Us      
-</div>
+{header}</div>
     </div>
   );
 };

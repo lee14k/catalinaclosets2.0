@@ -40,7 +40,9 @@ const About = () => {
         <div>
             <NewNav />
             <div></div>
-            <HorizontalSlider/>
+            <HorizontalSlider
+            header="About Us"
+            />
 
             <div className="mt-24">
                 <div className="flex justify-center items-center aboutcontainer">
