@@ -10,7 +10,7 @@ export default function Leftphoto({ heading, description, imageSrc, imageAlt, im
     const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
     return (
-        <div className="flex flex-col above-xs:flex-row justify-center my-12" >
+        <div className="flex flex-col above-xs:flex-row justify-center py-12 bg-white" >
             <motion.div style={{ scale }}>
                 <div className='leftphotocontainer'>
                     <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />

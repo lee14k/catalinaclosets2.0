@@ -57,8 +57,8 @@ export default function Twophotobutton({ header }) {
   const selectedItem = items.find(item => item.id === selectedId);
 
   return (
-    <div className="container mt-48">
-      <div className="text-6xl flex justify-center items-center">
+    <div className=" pt-48 bg-white">
+      <div className="text-6xl flex justify-center items-center bg-white">
         <h1>{header}</h1>
       </div>
       <div className="grid grid-cols-2 gap-64 justify-center items-center">

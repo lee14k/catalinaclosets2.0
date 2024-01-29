@@ -2,9 +2,10 @@ import Link from 'next/link';
 
 export default function Imagegrid({ images }) {
   return (
-    <div className="gallerycontainer flex justify-center mb-10">
-      <div className="container">
-        <div className="gallery">
+    <div className="bg-white">
+    <div className="gallerycontainer flex justify-center pb-10 bg-white">
+      <div className="container  bg-white">
+        <div className="gallery bg-white">
           {images.map((item, index) => (
             <Link href={item.page} key={index}>
               <div className="gallery__item-wrapper">
@@ -13,12 +14,13 @@ export default function Imagegrid({ images }) {
                     {item.header}
                   </figcaption>
                 </div>
-                <span className="mobile-caption text-4xl">{item.header}</span>
+                <span className="mobile-caption text-4xl bg-white">{item.header}</span>
               </div>
             </Link>
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
