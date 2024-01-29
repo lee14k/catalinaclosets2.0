@@ -6,13 +6,14 @@ export default function Timeline() {
     const [currentStep, setCurrentStep] = useState(0);
     const [steps, setSteps] = useState([
 
-      { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.', isActive: true 
+      { id: '01', name: 'Book a Consultation', status: 'upcoming',     description: 'You have successfully booked your consultation.', isActive: true, image: '/allwhite.jpg'
+ 
     },
-      { id: '02', name: 'Design your closet', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false
+      { id: '02', name: 'Design your closet', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false, image: '/allwhite.jpg'
     },
-      { id: '03', name: 'Book installation',  status: 'upcoming',    description: 'Your closet design is being prepared.', isActive: false
+      { id: '03', name: 'Installation',  status: 'upcoming',    description: 'Set up an installation with us.', isActive: false, image: '/allwhite.jpg'
     },
-      { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false
+      { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false, image: '/allwhite.jpg'
     },
     
     ])
@@ -62,19 +63,7 @@ export default function Timeline() {
               <>
                 {/* Arrow separator for lg screens and up */}
                 <div className="absolute right-0 top-0 hidden h-full w-5 md:block" aria-hidden="true">
-                  <svg
-                    className="h-full w-full text-gray-300"
-                    viewBox="0 0 22 80"
-                    fill="none"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M0 -2L20 40L0 82"
-                      vectorEffect="non-scaling-stroke"
-                      stroke="currentcolor"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+              
                 </div>
               </>
             ) : null}
