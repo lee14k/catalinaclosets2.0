@@ -208,6 +208,13 @@
   /* Other styling as needed */
 }
 
+.aboutcontainer{
+  height:750px;
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/aboutpic.jpg');
+  background-size:cover;
+
+}
+
 @media screen and (max-width: 800px) {
   .homehead {
     display: flex;

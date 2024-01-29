@@ -15,18 +15,18 @@ export default function Contact() {
       </div>
       <div className="grid grid-cols-2">
         <div className="flex flex-col justify-center items-center" >
-          <div className="flex flex-col">
-            <div>
+          <div className="flex flex-col gap-12">
+            <div className="flex">
               <PhoneIcon className="h-12 w-12" />
 
               Phone Number
             </div>
-            <div>
+            <div className="flex">
               <EnvelopeIcon className="h-12 w-12" />
 
               Phone Number
             </div>
-            <div>
+            <div className="flex">
               <ClockIcon className="h-12 w-12" />
 
               Phone Number
