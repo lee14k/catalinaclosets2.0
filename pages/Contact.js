@@ -16,20 +16,25 @@ export default function Contact() {
       <div className="grid grid-cols-2">
         <div className="flex flex-col justify-center items-center" >
           <div className="flex flex-col gap-12">
-            <div className="flex">
+            <div className="flex gap-6">
               <PhoneIcon className="h-12 w-12" />
 
-              Phone Number
+              608-205-5000
             </div>
-            <div className="flex">
+            <div className="flex gap-6">
               <EnvelopeIcon className="h-12 w-12" />
 
-              Phone Number
+              info@catalinaclosets.com
             </div>
-            <div className="flex">
+            <div className="flex gap-6">
               <ClockIcon className="h-12 w-12" />
-
-              Phone Number
+             <ul> 
+              <li>Monday – Friday - 8:30am -5:00pm</li>
+<li>
+Saturday and Sunday -
+Yep, but call ahead.
+</li>
+</ul>
             </div>
           </div>
 
@@ -37,6 +42,6 @@ export default function Contact() {
         <ContactForm />
       </div>
       <Footer />
-    </div>
+    </div >
   );
 }
