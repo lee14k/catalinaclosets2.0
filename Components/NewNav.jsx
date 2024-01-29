@@ -9,7 +9,7 @@ const navigation = [
   { name: "Contact", href: "/Contact", current: false },
   {
     name: "Closets",
-    href: "#",
+    href: "/",
     current: false,
     children: [
       { name: "Walk-In Closets", href: "/WalkIn" },
@@ -70,27 +70,36 @@ export default function NewNav() {
               <div className="flex flex-1 items-center">
                 <div className=" sm:ml-6 sm:block">
                   <div className="flex space-x-12 ">
-                    {navigation.map((item) => (
-                      <div key={item.name}>
-                         <Link href={item.href}>
-                <span
-                  className
-                  aria-current={item.current ? 'page' : undefined}
-                  onClick={() => item.children && toggleDropdown(item.name)}
-                >
-                  {item.name}
-                </span>
-              </Link>
+                  {navigation.map((item) => (
+  <div key={item.name}>
+    {/* Check if the item has children */}
+    {item.children ? (
+      // Render as a span or button, not as a link
+      <span
+        className="cursor-pointer"
+        aria-current={item.current ? 'page' : undefined}
+        onClick={() => toggleDropdown(item.name)}
+      >
+        {item.name}
+      </span>
+    ) : (
+      // Render as a link if there are no children
+      <Link href={item.href}>
+        <div className={classNames(item.current ? "text-gray-900" : "text-gray-500", "hover:text-gray-900")}>
+          {item.name}
+        </div>
+      </Link>
+    )}
                         {/* Render dropdown if item has children */}
-                         {item.children && activeDropdown === item.name && (
-                <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                  <div className="py-1">
-                    {item.children.map((subItem) => (
-                      <Link key={subItem.name} href={subItem.href}>
-                        <span className="block px-4 py-2 text-sm hover:bg-gray-100">
-                          {subItem.name}
-                        </span>
-                      </Link>
+                        {item.children && activeDropdown === item.name && (
+      <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div className="py-1">
+          {item.children.map((subItem) => (
+            <Link key={subItem.name} href={subItem.href}>
+              <div className="block px-4 py-2 text-sm hover:bg-gray-100">
+                {subItem.name}
+              </div>
+            </Link>
                     ))}
                   </div>
                 </div>
