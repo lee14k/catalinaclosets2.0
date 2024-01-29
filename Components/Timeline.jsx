@@ -72,10 +72,14 @@ export default function Timeline() {
       </ol>
       
     </nav>
-    <div className="step-content my-24">
+    <div className="step-content my-24 grid grid-cols-2">
+      <div>
         <img src={steps[currentStep].image} alt={steps[currentStep].title} />
+        </div>
+        <div>
         <h2>{steps[currentStep].title}</h2>
         <p>{steps[currentStep].description}</p>
+        </div>
       </div>
     </div>
   )
