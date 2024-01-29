@@ -10,15 +10,19 @@ const About = () => {
             <div></div>
             <HorizontalSlider/>
 
-            <div className="grid grid-cols-2 ml-10  mt-24">
+            <div className="ml-10  mt-24">
+                <div className="flex justify-center items-center">
                 <Image
                     src="/aboutpic.jpg"
                     height={500}
-                    width={500}
+                    width={1500}
                 />
+                </div>
                 <div className="flex flex-col justify-center items-center">
-            <h2>About Us</h2>
-            <p>Blurb about the company</p>
+            <h2 className="text-2xl">About Us</h2>
+            <p>Catalina Closets is here to help with beautiful and functional custom closet and organization solutions for your home or office. We help customers find extra space in every room of the house, including closets, garages, laundry rooms, libraries, living rooms, mudrooms, pantries, wine rooms, cellars, attics, and wherever else you need some extra space. We make everything locally, here in Dane County, Wisconsin. Give us a call to see how we can transform the spaces where you live and work.
+
+</p>
                 </div>
             </div>
             <h2>Our Process</h2>
