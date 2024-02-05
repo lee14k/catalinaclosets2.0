@@ -18,7 +18,7 @@ const Gridz = ({ id, imgSrc, description, buttonText, onClick, headerText }) => 
     initial="hidden"
     animate="visible"
     variants={gridItemVariants}
-    className="grid-item" 
+    className="grid-item twocontainer" 
     style={{ backgroundImage: `url(${imgSrc})` }}
   >
     <h2 className="text-white text-2xl" style={{ position: 'relative', zIndex: 2 }}>{headerText}</h2>
@@ -29,7 +29,7 @@ const DetailedView = ({ item, onClose }) => {
   return (
     <motion.div 
       layoutId={`item-${item.id}`} 
-      className="modal-backdrop"
+      className="modal-backdrop twocontainer"
       initial="hidden"
       animate="visible"
       exit="hidden"
@@ -57,11 +57,11 @@ export default function Twophotobutton({ header }) {
   const selectedItem = items.find(item => item.id === selectedId);
 
   return (
-    <div className=" pt-48 bg-white">
+    <div className="pt-48 twocontainer bg-white">
       <div className="text-6xl flex justify-center items-center bg-white">
         <h1>{header}</h1>
       </div>
-      <div className="grid grid-cols-2 gap-64 justify-center items-center">
+      <div className="grid grid-cols-2 gap-64 justify-center items-center twocontainer">
         {items.map(item => (
           <Gridz 
             key={item.id} 

@@ -314,6 +314,10 @@
   .mainbodywrapper {
     width:700px;
   }
+  .twocontainer {
+    display:flex;
+    flex-direction: column;
+  }
 }
 .imgcontainer {
   display: grid;

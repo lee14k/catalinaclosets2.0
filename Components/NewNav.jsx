@@ -48,12 +48,14 @@ export default function NewNav() {
         <>
        
           <div className="flex justify-center pt-12">
+            <Link href="/">
           <Image
       src="/cclogo.png"
       width={200}
       height={200}
      className="mr-12 mb-12"
       />
+      </Link>
             <div className="flex h-16 justify-center">
               <div className="absolute inset-y-0 left-0 flex sm:hidden">
                 {/* Mobile menu button*/}

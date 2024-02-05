@@ -18,9 +18,9 @@ export default function Leftphoto({ heading, description, imageSrc, imageAlt, im
                         className="text-overlay"
                         style={{ opacity }}
                     >
-                        <h2 className="text-white text-6xl homeheadhead">{heading}</h2>
+                        <h2 className="text-white text-6xl homeheadhead pt-24">{heading}</h2>
                         <Link href="/Closets">
-                        <button className="ml-12 mt-5 bg-pink-800 px-6 py-3 text-xl font-semibold text-white shadow-sm border-solid border-white border-2 w-9/12">{description}</button>
+                        <button className="rounded-md bg-pink-700 my-10 px-10 py-6 text-xl font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 mb-48">{description}</button>
                         </Link>
                     </motion.div>
                 </div>
