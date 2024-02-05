@@ -13,7 +13,7 @@ export default function Timeline() {
     },
       { id: '03', name: 'Installation',  status: 'upcoming',    description: 'Set up an installation with us.', isActive: false, image: '/allwhite.jpg'
     },
-      { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Your closet design is being prepared.', isActive: false, image: '/allwhite.jpg'
+      { id: '04', name: 'Enjoy your new space', status: 'upcoming',     description: 'Use your new beautiful space', isActive: false, image: '/allwhite.jpg'
     },
     
     ])
