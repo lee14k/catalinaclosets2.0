@@ -50,11 +50,10 @@ export default function Home() {
         imageAlt="Description of the image"
         imageWidth={1000}
         imageHeight={500}
-        className="bg-white"
+        className="bg-white mb-48"
       />
             <Parafill />
 
-      <Twophotobutton header="Customize your Space" />
       <Footer />
 
       </Parallax>
