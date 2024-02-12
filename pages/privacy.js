@@ -1,5 +1,5 @@
-import NewNav from '@/components/NewNav';
-import Footer from "@/components/Footer";
+import NewNav from '@/Components/NewNav';
+import Footer from "@/Components/Footer";
 export default function Privacy() {
   return (
     <div className="privacywrap p-10 ">
