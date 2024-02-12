@@ -1,9 +1,6 @@
-import Head from "@/Components/Head";
-import Imagegrid from "@/Components/Imagegrid";
 import Conbar from "@/Components/Conbar";
 import Footer from "@/Components/Footer";
 import DesignIdeaSlider from '../Components/DesignIdeaSlider';
-import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
 import NewNav from "@/Components/NewNav";
 import HorizontalSlider from "@/Components/HorizontalSlider";
@@ -45,15 +42,14 @@ export default function Closets() {
             />
       
       
-      <div   className="closetcall mx-10 my-10">
-      <Spacecta headlineone="Get started with a free consultation"
-        headlinetwo="We'll help you find the right solution for your home"
-        buttontext="Schedule a free consultation" 
-      />
-       
-        </div>
+      <div className="mt-2 flex justify-center items-center aboutcontainer">
+         
+         <p>Catalina Closets is here to help with beautiful and functional custom closet and organization solutions for your home or office. We help customers find extra space in every room of the house, including closets, garages, laundry rooms, libraries, living rooms, mudrooms, pantries, wine rooms, cellars, attics, and wherever else you need some extra space. We make everything locally, here in Dane County, Wisconsin. Give us a call to see how we can transform the spaces where you live and work.
+
+</p>
+
+         </div>
         <h1 className="text-4xl py-16">Custom Closet Design Ideas</h1>
-      <DesignIdeaSlider images={images} header={headers} descriptions={descriptions}/>
       <Footer />
     </div>
   );
