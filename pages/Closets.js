@@ -6,6 +6,7 @@ import DesignIdeaSlider from '../Components/DesignIdeaSlider';
 import Form from "@/Components/Form";
 import Spacecta from "@/Components/Spacecta";
 import NewNav from "@/Components/NewNav";
+import HorizontalSlider from "@/Components/HorizontalSlider";
 export default function Closets() {
 
   const accImages = [
@@ -39,11 +40,9 @@ export default function Closets() {
     <div className="mainbodywrapper">
       <Conbar />
       <NewNav />
-        <Head
-          head="Closets"
-          caption="Uniboard© custom colors and finishes allow for whatever you can dream of, from solids of all colors to wood grains of all patterns"
-          backgroundImageUrl="/closets.jpg"
-        />
+      <HorizontalSlider
+                header="Closets"
+            />
       
       
       <div   className="closetcall mx-10 my-10">
